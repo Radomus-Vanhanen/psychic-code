@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>RoClans</title>
+
+		<link rel="stylesheet" href="/css/style.css" type="text/css">
+	</head>
+	<body>
+		<header>
+			<% include templates/header.ejs %>
+		</header>
+			<% include templates/announcement.ejs %>
+		<form>
+			<br><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search a fort...">
+		</form><br>
+		<section id="placeList">
+			<div class="placeListBackground" id="placeListGet">
+			 <ul id="placeCells">
+				<% placeData.forEach(function(placeData) { %>
+					<div class="placeContainer <%= placeData.category %>" class><a href = "https://www.roblox.com/games/<%= placeData.placeid %>/-"><img src= "<%= placeData.placeicon %>" alt="<%= placeData.placename %>" align="left" width="178" height="100"><span><%= placeData.placename %></span><p><%= placeData.clan %></p><p>Playing: <%= placeData.playing %></p><p class="sCategory"><%= placeData.category %></p></a></div>
+				<% }); %>
+			 </ul>
+			</div>
+		</section>
+		<br><footer>Contact us: https://discord.gg/fMb5y7T</footer>
+	</body>
+	<% include templates/search.ejs %>
+</html>

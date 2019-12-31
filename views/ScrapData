@@ -1,0 +1,165 @@
+[[ = Noble Blade - Lametta = ]]
+
+
+<fieldset>
+  <form action="/" method="post">
+    <input name="city" type="text" class="ghost-input" placeholder="Enter a PlaceId" required>
+    <input type="submit" class="ghost-button" value="Get Weather">
+  </form>
+  <% if(locals.lineOfDOOM !== null){ %>
+    <p><%= locals.lineOfDOOM %></p>
+    <% } %>
+    
+    <% if(locals.error !== null){ %>
+    <p><%= locals.error %></p>
+    <% } %>
+</fieldset>
+
+
+[[=======================================================================]]
+
+
+// Top Space
+
+const cheerio = require('cheerio');
+const express = require('express')
+const app = express()
+const bodyParser = require('body-parser');
+const request = require('request');
+
+app.set('view engine', 'ejs')
+app.use(express.static('public'));
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.get('/resources', function(requ, resp) {
+  resp.render('resources', {
+
+  });
+});
+
+var placeData = [];
+var arrayOfPlaces = [
+  '2391643322', // Noble Blade Fort Tenora
+  '2454651094', // Frost Clan Fort Wolf
+  '918219640', // Sky Clan of Roblox Beach Side Outpost
+  '1095430150', // Team Domino Fort Aamon III
+  '2007375127', // Vaktovian Empire Port Maersk DT
+  '2742930668', // Vaktovian Empire The Azukan Mines DT
+  '3222640520', // Unstable Pillars of Judgement
+];
+
+// UNACCEPTED
+//'1399941230', // Prime Legion Province of Mulai Takuli
+
+
+
+
+[[=======================================================================]]
+
+
+// Current AppData
+
+app.get('/', function (req, res) {
+  placeData = [];
+  for (var i = 0; i < arrayOfPlaces.length; i++) {
+    let url = `https://www.roblox.com/games/` + arrayOfPlaces[i] + `/-`
+    request(url, function (err, response, body) {
+      if(err){
+        res.render('index', {returnData: null, error: 'Error, please try again'});
+      } else {
+        if (response.statusCode == 200) {
+          const $ = cheerio.load(body)
+          var playing = 0
+          var maxplayers = 0
+        $("p[class='text-lead font-caption-body wait-for-i18n-format-render']").each((i, el) => {
+          const item = $(el).text().replace(/,/,'');
+          if (i == 0) {
+              playing = item;
+          } else if (i == 3); {
+              maxplayers = item;
+          };
+        });
+          var firstStep = body.lastIndexOf(`carousel-thumb`);
+          var secondStep = body.indexOf(`left carousel-control`)
+          var modifiedString = body.substring(firstStep + 19, secondStep -30);
+          var placeIcon = modifiedString;
+          var placeTitle =  $("h2[class='game-name']").text();
+          var placeLink = url;
+          placeData.push(
+            { valuePlayers: playing, valuePlaceName: placeTitle, valuePlaceLink: placeLink, valueIcon: placeIcon },
+          );
+          if (placeData.length == arrayOfPlaces.length) {
+            console.log(placeData)
+            placeData.sort(function (knit1, pearl2) {
+               if (Number(knit1.valuePlayers) > Number(pearl2.valuePlayers)) return -1;
+               if (Number(knit1.valuePlayers) < Number(pearl2.valuePlayers)) return 1;
+            });
+            console.log(placeData);
+            res.render('index', {
+              placeData: placeData,
+            });
+          }
+        }
+      }
+    });
+  };
+})
+
+
+[[=======================================================================]]
+
+
+// EJS Code
+
+	</form>	
+		<% if(locals.returnData !== null){ %>
+    		<%= locals.returnData %>
+		<% } %>
+
+		<% if(locals.error !== null){ %>
+			<%= locals.error %>
+		 <% } %>
+
+
+[[=======================================================================]]
+
+
+// Sort and Create
+
+function sortPlaceData() {
+  placeData.sort(function (knit1, pearl2) {
+    if (Number(knit1.valuePlayers) > Number(pearl2.valuePlayers)) return -1;
+    if (Number(knit1.valuePlayers) < Number(pearl2.valuePlayers)) return 1;
+  });
+  return placeData;
+};
+
+function addToList(placeId, cycle) {
+   let url = `https://www.roblox.com/games/` + placeId + `/-`
+   request(url, function (err, response, body) {
+     if(err){
+       res.render('index', {returnData: null, error: 'Error, please try again'});
+     } else {
+       if (response.statusCode == 200) {
+         const $ = cheerio.load(body)
+         var playing = 0
+         var maxplayers = 0
+      $("p[class='text-lead font-caption-body wait-for-i18n-format-render']").each((i, el) => {
+         const item = $(el).text().replace(/,/,'');
+         if (cycle == 0) {
+             playing = item;
+         } else if (cycle == 3); {
+             maxplayers = item;
+         };
+      });
+         var firstStep = body.lastIndexOf(`carousel-thumb`);
+         var secondStep = body.indexOf(`left carousel-control`)
+         var modifiedString = body.substring(firstStep + 19, secondStep -30);
+         var placeIcon = modifiedString;
+         var placeTitle =  $("h2[class='game-name']").text();
+         var placeLink = url;
+         placeData.push({valuePlayers: playing, valuePlaceName: placeTitle, valuePlaceLink: placeLink, valueIcon: placeIcon});
+       }
+     }
+   });
+};

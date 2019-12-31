@@ -1,0 +1,273 @@
+
+			body {
+				background: rgb(43, 41, 41);
+				font-family: comic;
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			header {
+				background: rgb(160, 0, 0);
+				background-size: 100%;
+				background-position: center;
+				padding: 0px;
+				height: 90px;
+				text-align: column;
+			}
+
+			/*NOTES!*/
+
+			header a {
+				color: black;
+				text-shadow: -.7px -.7px 0 rgb(255, 255, 255), .7px -.7px 0 rgb(255, 255, 255), -.7px .7px 0 rgb(255, 255, 255), .7px .7px 0 rgb(255, 255, 255);
+				text-decoration: none;
+				text-transform: uppercase;
+				font-size: 18px;
+				margin-top: 80px;
+				/*background-color: rgba(221, 220, 224, 0.452);*/
+				padding: 0px;
+				font-weight: bold;
+			}
+
+			.placeListBackground {
+				background: rgb(202, 202, 202);
+				/*background-image: url("images/kagetanebackground.jpg");*/
+				color: rgb(27, 27, 27);
+				padding: 0px;
+				flex-direction: column;
+			}
+
+			header .logo a {
+				background: none;
+				background-image: url("/css/images/RoClanLogo.png");
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position-x: 0px;
+				width: 200px;
+				display: block;
+				height: 100px;
+				position: absolute;
+				left: 50%;
+				top: -80px;
+				transform: translate(-50%,0);
+				text-indent: -99999px;
+			}
+
+
+			.placeContainer a img {
+				width: 89px;
+  				height: 50px;
+				box-shadow: black 0px 0px 0px;
+				background-color: black;
+				border-radius: 5px;
+				overflow: hidden;
+			}
+
+			.placeContainer {
+				background: none;
+				height: 50px;
+				margin-right: 0%;
+				background-color: rgb(255, 255, 255);
+				border-radius: 5px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				font-weight: bold;
+				overflow: hidden;
+				font-size: 12px;
+				width: 100%;
+			}
+
+			.devContainer {
+				background: none;
+				margin: 5px 30%;
+				width: 40%;
+				height: 150px;
+				opacity: 0.6;
+				background-color: rgb(0, 0, 0);
+				border-radius: 5px;
+				font-weight: bold;
+				overflow: hidden;
+				font: bold;
+				text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+				margin-right: 5px;
+				font-size: 20px;
+			}
+
+			.devContainer img {
+				background-color: #000000;
+				background-image: url(https://t0.rbxcdn.com/2c3e9a5ea8517adab44663915abeebc0);
+				background-size: cover;
+				opacity: 1;
+			}
+
+			span {
+				padding-left: 0px;
+				font-style: fantasy;
+				font-size: 12px;
+			}
+
+			p {
+				text-indent: 2px;
+				color: rgb(0, 0, 0);
+			}
+
+			a {
+				text-decoration: none;
+				color: black;
+			}
+
+			.placeContent {
+				position: inherit;
+				background-color: none;
+				width: 300px;
+				height: 200px;
+				color: white;
+				font-family: fantasy;
+				top: -150px;
+				right: -770px; 
+			}
+
+			footer {
+				background: rgb(163, 163, 163);
+				text-align: center;
+			}
+
+			nav li {
+				display: inline-block;
+				margin-right: 0px;
+			}
+
+			@media only screen and (min-width: 930px) {
+				header {
+					background: rgb(160, 0, 0);
+					background-size: 100%;
+					background-position: center;
+					padding: 10px;
+					height: 90px;
+					text-align: center;
+				}
+	
+				header a {
+					color: black;
+					text-shadow: -.8px -.8px 0 rgb(255, 255, 255), .8px -.8px 0 rgb(255, 255, 255), -.8px .8px 0 rgb(255, 255, 255), .8px .8px 0 rgb(255, 255, 255);
+					text-decoration: none;
+					text-transform: uppercase;
+					margin-top: 60px;
+					border-radius: 15px;
+					/*background-color: rgba(221, 220, 224, 0.452);*/
+					padding: 8px;
+					font-weight: bold;
+				}
+
+				header a {
+					color: black;
+					text-shadow: -.8px -.8px 0 rgb(255, 255, 255), .8px -.8px 0 rgb(255, 255, 255), -.8px .8px 0 rgb(255, 255, 255), .8px .8px 0 rgb(255, 255, 255);
+					text-decoration: none;
+					text-transform: uppercase;
+					margin-top: 60px;
+					border-radius: 15px;
+					/*background-color: rgba(221, 220, 224, 0.452);*/
+					padding: 8px;
+					font-weight: bold;
+				}
+
+				header .logo a {
+					background: none;
+					background-image: url("/css/images/RoClanLogo.png");
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position-x: 0px;
+					width: 200px;
+					display: inline-block;
+					height: 100px;
+					position: relative;
+					transform: translate(0,0);
+					left: -50px;
+					top: -55px;
+					text-indent: -99999px;
+				}
+
+				.placeContent {
+					position: inherit;
+					background-color: none;
+					width: 400px;
+					height: 100px;
+					color: white;
+					font-family: fantasy;
+					top: -150px;
+					right: -770px; 
+				}
+
+				.placeContainer a img {
+					width: 266px;
+					height: 150px;
+					box-shadow: black 0px 0px 0px;
+					background-color: black;
+					border-radius: 5px;
+					overflow: hidden;
+				}
+
+				.placeContainer {
+					background: none;
+					margin: auto;
+					width: 700px;
+					height: 150px;
+					margin-right: 10%;
+					background-color: rgb(255, 255, 255);
+					border-radius: 5px;
+					font-weight: bold;
+					font-size: 15px;
+					overflow: hidden;
+					padding: 3px;
+				}
+
+				.devContainer {
+					background: none;
+					margin: 5px 30%;
+					width: 40%;
+					height: 150px;
+					opacity: 0.6;
+					background-color: rgb(0, 0, 0);
+					border-radius: 5px;
+					font-weight: bold;
+					overflow: hidden;
+					padding: 3px;
+					font: bold;
+					text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+					margin-right: 5px;
+					font-size: 20px;
+				}
+	
+				.devContainer img {
+					background-color: #000000;
+					background-image: url(https://t0.rbxcdn.com/2c3e9a5ea8517adab44663915abeebc0);
+					background-size: cover;
+					opacity: 1;
+				}
+
+				span {
+					padding-left: 5px;
+					font-style: fantasy;
+					font-size: large;
+				}
+
+				footer {
+					background: rgb(163, 163, 163);
+					padding: 15px 15px;
+					text-align: center;
+				}
+
+				nav li {
+					display: inline-block;
+					margin-right: 20px;
+				}
+			}
+
+			nav ul {
+				margin: 0px;
+				padding: 0px;
+				list-style-type: none;
+			}
+				/*https://docs.google.com/document/d/1q41jmuvwytGxOSJPySr36ddLc5M3jt_a2dho34nWu4Q/edit?usp=sharing*/
+				/*https://docs.google.com/document/d/1XwXBTiYzXVrRTGrazXGCril9t7bmOE6BgbnZ50wRk34/edit?usp=sharing*/

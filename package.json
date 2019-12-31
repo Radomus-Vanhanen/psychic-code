@@ -1,0 +1,32 @@
+{
+  "name": "example-site",
+  "version": "1.0.0",
+  "description": "This website is designed to assist the clan community through simple convenience.",
+  "main": "index.ejs",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "gitr"
+  },
+  "keywords": [
+    "start"
+  ],
+  "author": "Lametta",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.0",
+    "mongoose": "^5.6.9",
+    "mysql": "^2.17.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0"
+  }
+}
