@@ -1,10 +1,10 @@
 {
-  "name": "example-site",
+  "name": "psychic-code",
   "version": "1.0.0",
   "description": "This website is designed to assist the clan community through simple convenience.",
   "main": "index.ejs",
   "scripts": {
-    "start": "node ./bin/www"
+    "test": "test"
   },
   "repository": {
     "type": "git",
