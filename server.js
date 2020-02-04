@@ -176,8 +176,8 @@ app.get('/', function (req, res) {
     });
   });
   
-  app.listen(80, function () {
-    console.log('Port is HTTP')
+  app.listen(443, function () {
+    console.log('Port is HTTPS')
   });
 
   function fn60sec() {
