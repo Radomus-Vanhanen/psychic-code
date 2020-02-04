@@ -177,7 +177,11 @@ app.get('/', function (req, res) {
   });
   
   app.listen(443, function () {
-    console.log('Port is HTTPS')
+    console.log('Port listening on HTTPS.')
+  });
+
+  app.listen(80, function () {
+    console.log('Port listening globally.')
   });
 
   function fn60sec() {
