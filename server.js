@@ -1,3 +1,4 @@
+
 const cheerio = require('cheerio');
 const express = require('express');
 const app = express();
@@ -55,7 +56,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '2088996132', clan: 'United Clan of ROBLOX', category: 'Melee'}, // Gemini
     {placeid: '584563589', clan: '[-Professional Ironed Force-]', category: 'Melee'}, // Zervius
     {placeid: '2496687533', clan: 'Daedalus Senate', category: 'Ranged'}, // Stronghold Reaven
-    {placeid: '4026700649', clan: '※ Myth Reserve Forces ※', category: 'Ranged'}, // City of Ersaiv
+    {placeid: '4026700649', clan: 'â€» Myth Reserve Forces â€»', category: 'Ranged'}, // City of Ersaiv
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
@@ -175,8 +176,8 @@ app.get('/', function (req, res) {
     });
   });
   
-  app.listen(3000, function () {
-    console.log('Port 3000')
+  app.listen(80, function () {
+    console.log('Port is HTTP')
   });
 
   function fn60sec() {
