@@ -6,8 +6,7 @@ const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://localhost:27017/";
 const axios = require("axios");
-const request = require('request')
-const bodyParser = require('body-parser');
+const request = require('request');
 
 app.use(bodyParser.json());
 app.set('view engine', 'ejs');
