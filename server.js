@@ -7,10 +7,26 @@ const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://localhost:27017/";
 const axios = require("axios");
 const request = require('request')
+const bodyParser = require('body-parser');
 
+app.use(bodyParser.json());
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// GET/POST API VERSION DISCORD
+
+// POST http://localhost:8080/api/users
+// parameters sent with 
+app.post('/api/commapp', function(req, res) {
+  var user_id = req.body.id;
+  var token = req.body.token;
+  var geo = req.body.geo;
+
+  res.send(user_id + ' ' + token + ' ' + geo);
+});
+
+// MAIN ARRAYS
 
   var arrayOfPlaceIds = [
     {placeid: '2391643322', clan: 'Noble Blade', category: 'Melee'}, // Fort Tenora
@@ -61,6 +77,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
   // {placeid: '', clan: '', category: ''}, // 
 
   var resourceData = [
+    {itemid: '4544019605', itemname: 'Sword', imageid: 'https://t4.rbxcdn.com/83eabeabf2e0ecf8a190a1320308213b', itemcreator: 'Lametta', itemdesc: 'A sword created by Lametta for the clan community. The sword sacrifices aesthetics, but prevents fatal exploits and offers a variety of options.'},
     {itemid: '125985896', itemname: 'Bricktops', imageid: 'https://t6.rbxcdn.com/703d2d68a4fd6500869005cf718303ea', itemcreator: 'owen0202', itemdesc: 'A classic map used globally for both practice and scrimmaging; originating from the RCL community.'},
   ];
 
@@ -168,6 +185,11 @@ app.get('/', function (req, res) {
     resourceData = resourceData
     res.render('resources', {
       resourceData: resourceData,
+    });
+  });
+
+  app.get('/.wellknown/acmechallenge/r3CUWPd6vnz0CN1Lrm1FVSOJsrDLQuGPfDTm0yTjNEk', function (req, res) {
+    res.render('a-string', {
     });
   });
 
