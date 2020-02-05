@@ -10,11 +10,11 @@
 	</head>
 	<body>
 		<header>
-			<% include templates/header.ejs %>
+			<%- include('templates/header') %>
 		</header>
-			<% include templates/announcement.ejs %>
+			<%- include('templates/announcement') %>
 		<form>
-			<br><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search a fort...">
+			<br><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by fort, clan, or category...">
 		</form><br>
 		<section id="placeList">
 			<div class="placeListBackground" id="placeListGet">
@@ -27,5 +27,5 @@
 		</section>
 		<br><footer>Contact us: https://discord.gg/fMb5y7T</footer>
 	</body>
-	<% include templates/search.ejs %>
+	<% include('templates/search') %>
 </html>
