@@ -181,6 +181,13 @@ app.get('/', function (req, res) {
     });
   });
 
+  var Destination = "https://discordapp.com/api/webhooks/675231361585381397/7XeCLyJMJ_qD-9i1KDBE8YStP49JfpRpJxvRDPlNevLTX2BENysAhdk8ldgZAuw9ieN4"
+  var Message = "You have posted to the website properly!"
+  fetch(Destination + "?Wait=true", 
+  {"method":"POST", "headers": {"content-type": "application/json"},
+  "body": JSON.stringify(Message)})
+  .then(a=>a.json()).then(console.log)
+
 
 app.get('/api/commapp', function(req, res) {
   res.render('commapp', {})
