@@ -7,6 +7,7 @@ const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://localhost:27017/";
 const axios = require("axios");
 const request = require('request');
+const fetch = require("node-fetch")
 
 app.use(bodyParser.json());
 app.set('view engine', 'ejs');

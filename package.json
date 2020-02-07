@@ -1,8 +1,8 @@
 {
-  "name": "psychic-code",
+  "name": "example-site",
   "version": "1.0.0",
   "description": "This website is designed to assist the clan community through simple convenience.",
-  "main": "index.ejs",
+  "main": "index.js",
   "scripts": {
     "test": "test"
   },
@@ -24,6 +24,7 @@
     "mongodb": "^3.3.0",
     "mongoose": "^5.6.9",
     "mysql": "^2.17.1",
+    "node-fetch": "^2.6.0",
     "request": "^2.88.0"
   },
   "devDependencies": {
