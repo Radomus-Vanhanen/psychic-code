@@ -13,18 +13,6 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// GET/POST API VERSION DISCORD
-
-// POST http://localhost:8080/api/users
-// parameters sent with 
-app.post('/api/commapp', function(req, res) {
-  var user_id = req.body.id;
-  var token = req.body.token;
-  var geo = req.body.geo;
-
-  res.send(user_id + ' ' + token + ' ' + geo);
-});
-
 // MAIN ARRAYS
 
   var arrayOfPlaceIds = [
@@ -76,7 +64,7 @@ app.post('/api/commapp', function(req, res) {
   // {placeid: '', clan: '', category: ''}, // 
 
   var resourceData = [
-    {itemid: '4544019605', itemname: 'Sword', imageid: 'https://t4.rbxcdn.com/83eabeabf2e0ecf8a190a1320308213b', itemcreator: 'Lametta', itemdesc: 'A sword created by Lametta for the clan community. The sword sacrifices aesthetics, but prevents fatal exploits and offers a variety of options.'},
+    {itemid: '4544019605', itemname: 'Community Sword', imageid: 'https://t4.rbxcdn.com/83eabeabf2e0ecf8a190a1320308213b', itemcreator: 'Lametta', itemdesc: 'A sword created by Lametta for the clan community. The sword sacrifices aesthetics, but prevents fatal exploits and offers a variety of options.'},
     {itemid: '125985896', itemname: 'Bricktops', imageid: 'https://t6.rbxcdn.com/703d2d68a4fd6500869005cf718303ea', itemcreator: 'owen0202', itemdesc: 'A classic map used globally for both practice and scrimmaging; originating from the RCL community.'},
   ];
 
@@ -187,15 +175,21 @@ app.get('/', function (req, res) {
     });
   });
 
-  app.get('/.wellknown/acmechallenge/r3CUWPd6vnz0CN1Lrm1FVSOJsrDLQuGPfDTm0yTjNEk', function (req, res) {
-    res.render('a-string', {
-    });
-  });
-
   app.get('/community', function (req, res) {
     res.render('community', {
     });
   });
+
+
+app.get('/api/commapp', function(req, res) {
+  console.log(req.url)
+  var Destination = "https://discordapp.com/api/webhooks/675231361585381397/7XeCLyJMJ_qD-9i1KDBE8YStP49JfpRpJxvRDPlNevLTX2BENysAhdk8ldgZAuw9ieN4"
+  var Message = "You have posted to the website properly!"
+  fetch(Destination + "?Wait=true", 
+  {"method":"POST", "headers": {"content-type": "application/json"},
+  "body": JSON.stringify(Message)})
+  .then(a=>a.json()).then(console.log)
+});
   
   app.listen(443, function () {
     console.log('Port listening on HTTPS.')
