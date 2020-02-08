@@ -189,8 +189,9 @@ app.post('/api/commapp', function(req, res) {
   console.log(req.body);
   res.render('commapp', {})
   var Destination = "https://discordapp.com/api/webhooks/675231361585381397/7XeCLyJMJ_qD-9i1KDBE8YStP49JfpRpJxvRDPlNevLTX2BENysAhdk8ldgZAuw9ieN4"
+  let keys = Object.keys(req.body);
   var Message = {
-    "content": req.body
+    "content": JSON.stringify(req.body[keys[0]])
     }
   fetch(Destination + "?wait=true", 
   {"method":"POST", "headers": {"content-type": "application/json"},
