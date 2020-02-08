@@ -65,7 +65,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
   // {placeid: '', clan: '', category: ''}, // 
 
   var resourceData = [
-    {itemid: '4544019605', itemname: 'Community Sword', imageid: 'https://t4.rbxcdn.com/83eabeabf2e0ecf8a190a1320308213b', itemcreator: 'Lametta', itemdesc: 'A sword created by Lametta for the clan community. The sword sacrifices aesthetics, but prevents fatal exploits and offers a variety of options.'},
+    {itemid: '4544019605', itemname: 'Secure Sword', imageid: 'https://tr.rbxcdn.com/21d030e4249f8604330f0791010e08e9/420/420/Gear/Png', itemcreator: 'Lametta', itemdesc: 'A sword that sacrifices a little bit of accuracy and smoothness but prevents exploits and major latency issues.'},
     {itemid: '125985896', itemname: 'Bricktops', imageid: 'https://t6.rbxcdn.com/703d2d68a4fd6500869005cf718303ea', itemcreator: 'owen0202', itemdesc: 'A classic map used globally for both practice and scrimmaging; originating from the RCL community.'},
   ];
 
@@ -190,6 +190,10 @@ app.get('/', function (req, res) {
   "body": JSON.stringify(Message)})
   .then(a=>a.json()).then(console.log)
 
+
+  app.get('/api/commapp', function(req, res) {
+    res.render('commapp', {})
+  });
 
 app.post('/api/commapp', function(req, res) {
   console.log(req.body);
