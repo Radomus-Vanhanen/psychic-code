@@ -190,8 +190,8 @@ app.post('/api/commapp', function(req, res) {
   var Token = req.body.token
   var Destination = "https://discordapp.com/api/webhooks/" + Token
   var Content = "Error"
-  if (req.body.rocode == "Spring") {
-    Content = req.body.archive
+  if (req.body.rocode == "109492") {
+    Content = req.body.msg
   }
   var Message = {
     "content": Content
