@@ -187,7 +187,8 @@ app.get('/', function (req, res) {
 
 app.post('/api/commapp', function(req, res) {
   res.render('commapp', {})
-  var Destination = "https://discordapp.com/api/webhooks/675694772522057739/zK3CnrNJHvNLwJM2nQP3Da9oDcT0zmknBpxI3lVzB6Rv2-5OWdl18uItv_-XNEmKkLJL"
+  var Token = req.body.token
+  var Destination = "https://discordapp.com/api/webhooks/" + Token
   var Content = "Error"
   if (req.body.rocode == "Spring") {
     Content = req.body.archive
