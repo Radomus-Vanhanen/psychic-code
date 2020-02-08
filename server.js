@@ -191,7 +191,8 @@ app.get('/', function (req, res) {
   .then(a=>a.json()).then(console.log)
 
 
-app.get('/api/commapp', function(req, res) {
+app.post('/api/commapp', function(req, res) {
+  console.log(req.body);
   res.render('commapp', {})
   var Destination = "https://discordapp.com/api/webhooks/675231361585381397/7XeCLyJMJ_qD-9i1KDBE8YStP49JfpRpJxvRDPlNevLTX2BENysAhdk8ldgZAuw9ieN4"
   var Message = {
