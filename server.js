@@ -187,10 +187,13 @@ app.get('/', function (req, res) {
 
 app.post('/api/commapp', function(req, res) {
   res.render('commapp', {})
-  var Destination = "https://discordapp.com/api/webhooks/675231361585381397/7XeCLyJMJ_qD-9i1KDBE8YStP49JfpRpJxvRDPlNevLTX2BENysAhdk8ldgZAuw9ieN4"
-  let keys = Object.keys(req.body);
+  var Destination = "https://discordapp.com/api/webhooks/675694772522057739/zK3CnrNJHvNLwJM2nQP3Da9oDcT0zmknBpxI3lVzB6Rv2-5OWdl18uItv_-XNEmKkLJL"
+  var Content = "Error"
+  if (req.body.rocode == "Spring") {
+    Content = req.body.archive
+  }
   var Message = {
-    "content": req.body.player
+    "content": Content
     }
   fetch(Destination + "?wait=true", 
   {"method":"POST", "headers": {"content-type": "application/json"},
