@@ -56,11 +56,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '2518219171', clan: 'Urban Assault Forces', category: 'Ranged'}, // Plateworks
     {placeid: '688059792', clan: 'Urban Assault Forces', category: 'Ranged'}, // Namak Wetlands
     {placeid: '257784240', clan: 'United Clan of ROBLOX', category: 'Ranged'}, // Oriion
+    {placeid: '4026700649', clan: 'â€» Myth Reserve Forces â€»', category: 'Ranged'}, // City of Ersaiv
     {placeid: '704633176', clan: 'United Clan of ROBLOX', category: 'Ranged'}, // Horizon
     {placeid: '2088996132', clan: 'United Clan of ROBLOX', category: 'Melee'}, // Gemini
     {placeid: '584563589', clan: '[-Professional Ironed Force-]', category: 'Melee'}, // Zervius
     {placeid: '2496687533', clan: 'Daedalus Senate', category: 'Ranged'}, // Stronghold Reaven
-    {placeid: '4026700649', clan: 'â€» Myth Reserve Forces â€»', category: 'Ranged'}, // City of Ersaiv
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
@@ -201,6 +201,13 @@ app.post('/api/commapp', function(req, res) {
   "body": JSON.stringify(Message)})
   .then(a=>a.json()).then(console.log)
 });
+
+function fn60sec() {
+  updateAll()
+};
+
+fn60sec();
+setInterval(fn60sec, 60*1000);
   
   app.listen(443, function () {
     console.log('Port listening on HTTPS.')
@@ -210,9 +217,4 @@ app.post('/api/commapp', function(req, res) {
     console.log('Port listening globally.')
   });
 
-  function fn60sec() {
-    updateAll()
-  };
-
-fn60sec();
-setInterval(fn60sec, 60*1000);
+  
