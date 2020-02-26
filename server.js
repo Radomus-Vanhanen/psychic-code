@@ -77,6 +77,7 @@ function updatePlace(placeName, clanName, placeIcon, playing, placeid, category)
       placeid: placeid,
       category: category
     }};
+    console.log("Updating collection...")
     dbo.collection("placedata").updateOne(myquery, newvalues, {upsert: true}, function(err, res) {
       if (err) throw err;
       console.log("Document updated.");
