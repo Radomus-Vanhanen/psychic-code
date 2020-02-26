@@ -4,8 +4,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
-const url = "mongodb://localhost:27017/";
-const axios = require("axios");
+const mongourl = "mongodb://206.189.217.179:27017/";
 const request = require('request');
 const fetch = require("node-fetch")
 
@@ -18,9 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
   var arrayOfPlaceIds = [
     {placeid: '2391643322', clan: 'Noble Blade', category: 'Melee'}, // Fort Tenora
-    {placeid: '2454651094', clan: 'Frost Clan', category: 'Ranged'}, // Fort Wolf
     {placeid: '918219640', clan: 'The Sky Clan of ROBLOX', category: 'Melee'}, // Beach Side Outpost
-
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
@@ -64,7 +61,7 @@ function addPlace(placeId, groupName, ctype) {
 function updatePlace(placeName, clanName, placeIcon, playing, placeid, category) {
   console.log("Place: " + placeName)
   console.log("Playing: " + playing)
-  MongoClient.connect(url, {
+  MongoClient.connect(mongourl, {
     useNewUrlParser: true,
     useUnifiedTopology: true
     }, function(err, db) {
@@ -91,6 +88,7 @@ function updatePlace(placeName, clanName, placeIcon, playing, placeid, category)
 // STEP TWO
 const functionWithPromise = (placeid, clan, category) => {
   //addPlace(item, "Unknown Clan", "Melee")
+  
   return Promise.resolve(addPlace(placeid, clan, category))
 };
 
@@ -109,7 +107,7 @@ const updateAll = async () => {
 let placeData = [];
 
 app.get('/', function (req, res) {
-    MongoClient.connect(url, {
+    MongoClient.connect(mongourl, {
       useNewUrlParser: true,
       useUnifiedTopology: true
       }, function(err, db) {
