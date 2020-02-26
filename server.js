@@ -206,15 +206,8 @@ function fn60sec() {
   updateAll()
 };
 
+  app.listen(80, function () {
+  });
+
 fn60sec();
 setInterval(fn60sec, 60*1000);
-  
-  app.listen(443, function () {
-    console.log('Port listening on HTTPS.')
-  });
-
-  app.listen(80, function () {
-    console.log('Port listening globally.')
-  });
-
-  
