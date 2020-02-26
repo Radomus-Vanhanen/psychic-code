@@ -8,7 +8,6 @@
 		<link rel="icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
 
 		<link rel="stylesheet" href="/css/style.css" type="text/css">
-		<script data-ad-client="ca-pub-2436102883270054" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	</head>
 	<body>
 		<header>
@@ -22,7 +21,7 @@
 			<div class="placeListBackground" id="placeListGet">
 			 <ul id="placeCells">
 				<% placeData.forEach(function(placeData) { %>
-					<div class="placeContainer <%= placeData.category %>" class><a href = "https://www.roblox.com/games/<%= placeData.placeid %>/-"><img src= "<%= placeData.placeicon %>" alt="<%= placeData.placename %>" align="left" width="178" height="100"><span><%= placeData.placename %></span><p><%= placeData.clan %></p><p>Playing: <%= placeData.playing %></p><p class="Category"><%= placeData.category %></p></a></div>
+					<div class="placeContainer <%= placeData.category %>" class><a href = "https://www.roblox.com/games/<%= placeData.placeid %>/-"><img src= "<%= placeData.placeicon %>" alt="<%= placeData.placename %>" align="left" width="178" height="100"><span><%= placeData.placename %></span><p><%= placeData.clan %></p><p>Playing: <%= placeData.playing %></p><p class="sCategory"><%= placeData.category %></p></a></div>
 				<% }); %>
 			 </ul>
 			</div>
