@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
-const mongourl = "mongodb://206.189.217.179:27017/";
+const mongourl = "mongodb://localhost:27017/";
 const request = require('request');
 const fetch = require("node-fetch")
 
@@ -77,7 +77,6 @@ function updatePlace(placeName, clanName, placeIcon, playing, placeid, category)
       placeid: placeid,
       category: category
     }};
-    console.log("Updating collection...")
     dbo.collection("placedata").updateOne(myquery, newvalues, {upsert: true}, function(err, res) {
       if (err) throw err;
       console.log("Document updated.");
