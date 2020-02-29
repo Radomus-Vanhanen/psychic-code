@@ -16,13 +16,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // MAIN ARRAYS
 
   var arrayOfPlaceIds = [
-    {placeid: '2391643322', clan: 'Noble Blade', category: 'Melee'}, // Fort Tenora
-    {placeid: '918219640', clan: 'The Sky Clan of ROBLOX', category: 'Melee'}, // Beach Side Outpost
+    {placeid: '1647005353', clan: 'Noble Blade', category: 'Melee / Ranged'}, // Section Delta
+    {placeid: '1476001068', clan: 'The Robloxian Army', category: 'Ranged'}, // Fort Rana
+    {placeid: '1542281150', clan: 'The Robloxian Army', category: 'Melee'}, // Fort Beaumont
+    {placeid: '2007110262', clan: 'The Vaktovian Army', category: 'Ranged'}, // Port Maersk [EASY MODE]
+    {placeid: '2797046423', clan: 'The Vaktovian Army', category: 'Ranged'}, // The Azukan Mines [EASY MODE]
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
   var resourceData = [
-    {itemid: '4544019605', itemname: 'Secure Sword', imageid: 'https://tr.rbxcdn.com/21d030e4249f8604330f0791010e08e9/420/420/Gear/Png', itemcreator: 'Lametta', itemdesc: 'A sword that sacrifices a little bit of accuracy and smoothness but prevents exploits and major latency issues.'},
+    {itemid: '4544019605', itemname: 'RoClans Sword', imageid: 'https://tr.rbxcdn.com/21d030e4249f8604330f0791010e08e9/420/420/Gear/Png', itemcreator: 'Lametta', itemdesc: 'A customizable sword that prevents exploit and many latency related issues.'},
     {itemid: '125985896', itemname: 'Bricktops', imageid: 'https://t6.rbxcdn.com/703d2d68a4fd6500869005cf718303ea', itemcreator: 'owen0202', itemdesc: 'A classic map used globally for both practice and scrimmaging; originating from the RCL community.'},
   ];
 
