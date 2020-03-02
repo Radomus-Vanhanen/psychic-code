@@ -167,7 +167,7 @@ function fn60sec() {
   updateAll()
 };
 
-  app.listen(80, function () {
+  app.listen(1337, function () { // the only port for lametta ofc
   });
 
 fn60sec();
