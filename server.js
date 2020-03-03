@@ -21,12 +21,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '1542281150', clan: 'The Robloxian Army', category: 'Melee'}, // Fort Beaumont
     {placeid: '2007110262', clan: 'The Vaktovian Army', category: 'Ranged'}, // Port Maersk [EASY MODE]
     {placeid: '2797046423', clan: 'The Vaktovian Army', category: 'Ranged'}, // The Azukan Mines [EASY MODE]
+    {placeid: '4026700649', clan: 'Myth Reserve Forces', category: 'Ranged'}, // City of Ersaiv
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
   var resourceData = [
-    {itemid: '4544019605', itemname: 'RoClans Sword', imageid: 'https://tr.rbxcdn.com/21d030e4249f8604330f0791010e08e9/420/420/Gear/Png', itemcreator: 'Lametta', itemdesc: 'A customizable sword that prevents exploit and many latency related issues.'},
+    {itemid: '4544019605', itemname: 'RoClans Sword', imageid: 'https://tr.rbxcdn.com/21d030e4249f8604330f0791010e08e9/420/420/Gear/Png', itemcreator: 'Lametta', itemdesc: 'A customizable sword that prevents certain exploits and many latency related issues.'},
     {itemid: '125985896', itemname: 'Bricktops', imageid: 'https://t6.rbxcdn.com/703d2d68a4fd6500869005cf718303ea', itemcreator: 'owen0202', itemdesc: 'A classic map used globally for both practice and scrimmaging; originating from the RCL community.'},
+    {itemid: '543918030', itemname: 'Uniformed', imageid: 'https://images.squarespace-cdn.com/content/v1/5c4afa007c9327f7a221518f/1548706752190-4CR2TPGRBNUU5WOOW8JC/ke17ZwdGBToddI8pDm48kBhs0kXmJu3pAC_LFF99rKVZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7eaDBaxyzPPG4B3J3_Z93rYLky5fjRrZeLmMK3F2aytfjfg4x4lXesDnM4MUpb-Vdw/scroll_128.png', itemcreator: 'Partixel', itemdesc: 'A uniform selection system. More information here: https://devforum.roblox.com/t/uniformed-a-free-opensource-fe-compatable-uniform-selection-system/63923'},
   ];
 
 // FUNCTION TO UPDATE PLACE (USING REQUEST FOR NOW)
