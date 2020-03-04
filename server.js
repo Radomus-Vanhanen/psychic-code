@@ -22,6 +22,15 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '2007110262', clan: 'The Vaktovian Army', category: 'Ranged'}, // Port Maersk [EASY MODE]
     {placeid: '2797046423', clan: 'The Vaktovian Army', category: 'Ranged'}, // The Azukan Mines [EASY MODE]
     {placeid: '4026700649', clan: 'Myth Reserve Forces', category: 'Ranged'}, // City of Ersaiv
+    {placeid: '1399941230', clan: 'Prime Legion', category: 'Melee'}, // Province of Mulai
+    {placeid: '2036637970', clan: 'Nightfall Clan', category: 'Ranged'}, // Fortress Noctem
+    {placeid: '257784240', clan: 'United Clan of ROBLOX', category: 'Ranged'}, // Oriion
+    {placeid: '704633176', clan: 'United Clan of ROBLOX', category: 'Ranged'}, // Horizon
+    {placeid: '2589348835', clan: 'RSF', category: 'Ranged'}, // Galileo
+    {placeid: '3262357086', clan: 'RSF', category: 'Ranged'}, // Arduous
+    {placeid: '3366185558', clan: 'RSF', category: 'Ranged'}, // Arvore
+    {placeid: '2890894136', clan: 'RSF', category: 'Melee'}, // Battlefield Zone
+    {placeid: '2351730401', clan: 'RSF', category: 'Ranged'}, // Gulian Gorge
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
