@@ -45,6 +45,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '4484427399', clan: '|| Imperial Armada ||', category: 'Ranged'}, // Arcannian Frontier III
     {placeid: '4480472063', clan: 'United States Armed Forces [USA]', category: 'Ranged'}, // Port Jackson
     {placeid: '4399974518', clan: 'Petras Liberation Front', category: 'Ranged'}, // Apec Command Post
+    {placeid: '2936078317', clan: 'Itvara', category: 'Melee'}, // Cosm
+    {placeid: '4127239925', clan: 'Fallen Defenders', category: 'Melee'}, // Kratos Core
+    {placeid: '834559339', clan: 'Aegis Core', category: 'Ranged'}, // Aegis Aetrio
+    {placeid: '810662312', clan: 'Aegis Core', category: 'Ranged'}, // Sapphire Compound
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
