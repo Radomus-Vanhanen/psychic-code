@@ -33,6 +33,18 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '2351730401', clan: 'RSF', category: 'Ranged'}, // Gulian Gorge
     {placeid: '331295568', clan: 'Cobalt Nation', category: 'Melee'}, // Fortress Grotto
     {placeid: '2341328394', clan: 'Cobalt Nation', category: 'Melee'}, // Valerius
+    {placeid: '2337204126', clan: 'Team Domino', category: 'Melee'}, // Bayfront Harbor
+    {placeid: '2578133852', clan: 'Federation of Arcadia', category: 'Ranged'}, // 
+    {placeid: '1144829704', clan: 'Federation of Arcadia', category: 'Ranged'}, // Shield World Novaan
+    {placeid: '3274071190', clan: 'The Tempus Imperium', category: 'Ranged'}, // Outpost Sik
+    {placeid: '4222766350', clan: 'Sigmarite Empire', category: 'Ranged'}, // Sataur Valley
+    {placeid: '3482144906', clan: 'Petras Liberation Front', category: 'Ranged'}, // Watchpoint Gibraltar
+    {placeid: '4572194478', clan: 'United Clan of ROBLOX', category: 'Melee'}, // Outpost Leo
+    {placeid: '398361701', clan: 'The Dark Warriors.', category: 'Melee'}, // Celvestia's Resurgence
+    {placeid: '409431042', clan: 'The Dark Warriors.', category: 'Melee'}, // Uada's Forest
+    {placeid: '4484427399', clan: '|| Imperial Armada ||', category: 'Ranged'}, // Arcannian Frontier III
+    {placeid: '4480472063', clan: 'United States Armed Forces [USA]', category: 'Ranged'}, // Port Jackson
+    {placeid: '4399974518', clan: 'Petras Liberation Front', category: 'Ranged'}, // Apec Command Post
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
