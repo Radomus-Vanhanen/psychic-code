@@ -52,6 +52,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '443736620', clan: 'The Dark Warriors.', category: 'Melee'}, // Original Capital
     {placeid: '1779037701', clan: 'Combat Assault Team', category: 'Ranged'}, // Baseline 57
     {placeid: '4558745672', clan: 'The Vykterrian Dominion', category: 'Ranged'}, // The Docks
+    {placeid: '3325353137', clan: 'Ascarian Insurgency', category: 'Melee'}, // Port Venterus
+    {placeid: '4757026121', clan: 'The Vykterrian Dominion', category: 'Ranged'}, // The Bio-Lab
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
