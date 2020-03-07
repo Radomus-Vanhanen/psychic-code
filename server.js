@@ -50,6 +50,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '834559339', clan: 'Aegis Core', category: 'Ranged'}, // Aegis Aetrio
     {placeid: '810662312', clan: 'Aegis Core', category: 'Ranged'}, // Sapphire Compound
     {placeid: '443736620', clan: 'The Dark Warriors.', category: 'Melee'}, // Original Capital
+    {placeid: '1779037701', clan: 'Combat Assault Team', category: 'Ranged'}, // Baseline 57
+    {placeid: '4558745672', clan: 'The Vykterrian Dominion', category: 'Ranged'}, // The Docks
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
