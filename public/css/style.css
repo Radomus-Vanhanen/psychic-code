@@ -172,7 +172,7 @@ footer {
     position: fixed;
     background-size: auto;
     bottom: 0;
-    box-sizing: 100%, 0;
+    width: 100%;
 }
 
 @media only screen and (min-width: 800px) {
