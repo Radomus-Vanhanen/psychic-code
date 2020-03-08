@@ -162,6 +162,15 @@ app.get('/', function (req, res) {
     res.render('index', {
       placeData: placeData,
     });
+    var Destination = "https://discordapp.com/api/webhooks/686171187428327435/aHZkixYHKkT3FsJxipO4MsLXoFrhqirt-UBzCOkR2ePeT9CP5-4e7N0pnAmPJRmOUhLR"
+    var Content = "Forts have been loaded..."
+    var Message = {
+      "content": Content
+      }
+    fetch(Destination + "?wait=true", 
+    {"method":"POST", "headers": {"content-type": "application/json"},
+    "body": JSON.stringify(Message)})
+    .then(a=>a.json()).then(console.log)
   });
 
   app.get('/resources', function (req, res) {
