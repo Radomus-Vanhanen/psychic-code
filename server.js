@@ -54,6 +54,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '4558745672', clan: 'The Vykterrian Dominion', category: 'Ranged'}, // The Docks
     {placeid: '3325353137', clan: 'Ascarian Insurgency', category: 'Melee'}, // Port Venterus
     {placeid: '4757026121', clan: 'The Vykterrian Dominion', category: 'Ranged'}, // The Bio-Lab
+    {placeid: '4742160743', clan: 'Avidya', category: 'Melee'}, // Defiance
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
