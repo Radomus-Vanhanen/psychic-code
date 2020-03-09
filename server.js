@@ -16,45 +16,47 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // MAIN ARRAYS
 
   var arrayOfPlaceIds = [
-    {placeid: '1647005353', clan: 'Noble Blade', category: 'Melee / Ranged'}, // Section Delta
-    {placeid: '1476001068', clan: 'The Robloxian Army', category: 'Ranged'}, // Fort Rana
-    {placeid: '1542281150', clan: 'The Robloxian Army', category: 'Melee'}, // Fort Beaumont
-    {placeid: '2007110262', clan: 'The Vaktovian Army', category: 'Ranged'}, // Port Maersk [EASY MODE]
-    {placeid: '2797046423', clan: 'The Vaktovian Army', category: 'Ranged'}, // The Azukan Mines [EASY MODE]
-    {placeid: '4026700649', clan: 'Myth Reserve Forces', category: 'Ranged'}, // City of Ersaiv
-    {placeid: '1399941230', clan: 'Prime Legion', category: 'Melee'}, // Province of Mulai
-    {placeid: '2036637970', clan: 'Nightfall Clan', category: 'Ranged'}, // Fortress Noctem
-    {placeid: '257784240', clan: 'United Clan of ROBLOX', category: 'Ranged'}, // Oriion
-    {placeid: '704633176', clan: 'United Clan of ROBLOX', category: 'Ranged'}, // Horizon
-    {placeid: '2589348835', clan: 'RSF', category: 'Ranged'}, // Galileo
-    {placeid: '3262357086', clan: 'RSF', category: 'Ranged'}, // Arduous
-    {placeid: '3366185558', clan: 'RSF', category: 'Ranged'}, // Arvore
-    {placeid: '2890894136', clan: 'RSF', category: 'Melee'}, // Battlefield Zone
-    {placeid: '2351730401', clan: 'RSF', category: 'Ranged'}, // Gulian Gorge
-    {placeid: '331295568', clan: 'Cobalt Nation', category: 'Melee'}, // Fortress Grotto
-    {placeid: '2341328394', clan: 'Cobalt Nation', category: 'Melee'}, // Valerius
-    {placeid: '2337204126', clan: 'Team Domino', category: 'Melee'}, // Bayfront Harbor
-    {placeid: '2578133852', clan: 'Federation of Arcadia', category: 'Ranged'}, // 
-    {placeid: '1144829704', clan: 'Federation of Arcadia', category: 'Ranged'}, // Shield World Novaan
-    {placeid: '3274071190', clan: 'The Tempus Imperium', category: 'Ranged'}, // Outpost Sik
-    {placeid: '4222766350', clan: 'Sigmarite Empire', category: 'Ranged'}, // Sataur Valley
-    {placeid: '3482144906', clan: 'Petras Liberation Front', category: 'Ranged'}, // Watchpoint Gibraltar
-    {placeid: '4572194478', clan: 'United Clan of ROBLOX', category: 'Melee'}, // Outpost Leo
-    {placeid: '398361701', clan: 'The Dark Warriors.', category: 'Melee'}, // Celvestia's Resurgence
-    {placeid: '409431042', clan: 'The Dark Warriors.', category: 'Melee'}, // Uada's Forest
-    {placeid: '4484427399', clan: '|| Imperial Armada ||', category: 'Ranged'}, // Arcannian Frontier III
-    {placeid: '4480472063', clan: 'United States Armed Forces [USA]', category: 'Ranged'}, // Port Jackson
-    {placeid: '4399974518', clan: 'Petras Liberation Front', category: 'Ranged'}, // Apec Command Post
-    {placeid: '2936078317', clan: 'Itvara', category: 'Melee'}, // Cosm
-    {placeid: '4127239925', clan: 'Fallen Defenders', category: 'Melee'}, // Kratos Core
-    {placeid: '834559339', clan: 'Aegis Core', category: 'Ranged'}, // Aegis Aetrio
-    {placeid: '810662312', clan: 'Aegis Core', category: 'Ranged'}, // Sapphire Compound
-    {placeid: '443736620', clan: 'The Dark Warriors.', category: 'Melee'}, // Original Capital
-    {placeid: '1779037701', clan: 'Combat Assault Team', category: 'Ranged'}, // Baseline 57
-    {placeid: '4558745672', clan: 'The Vykterrian Dominion', category: 'Ranged'}, // The Docks
-    {placeid: '3325353137', clan: 'Ascarian Insurgency', category: 'Melee'}, // Port Venterus
-    {placeid: '4757026121', clan: 'The Vykterrian Dominion', category: 'Ranged'}, // The Bio-Lab
-    {placeid: '4742160743', clan: 'Avidya', category: 'Melee'}, // Defiance
+    {placeid: '1647005353', clan: 'Noble Blade', category: 'Melee / Ranged', acr: 'NB'}, // Section Delta
+    {placeid: '1476001068', clan: 'The Robloxian Army', category: 'Ranged', acr: 'TRA'}, // Fort Rana
+    {placeid: '1542281150', clan: 'The Robloxian Army', category: 'Melee', acr: 'TRA'}, // Fort Beaumont
+    {placeid: '2007110262', clan: 'The Vaktovian Army', category: 'Ranged', acr: 'VAK'}, // Port Maersk [EASY MODE]
+    {placeid: '2797046423', clan: 'The Vaktovian Army', category: 'Ranged', acr: 'VAK'}, // The Azukan Mines [EASY MODE]
+    {placeid: '4026700649', clan: 'Myth Reserve Forces', category: 'Ranged', acr: 'MRF'}, // City of Ersaiv
+    {placeid: '1399941230', clan: 'Prime Legion', category: 'Melee', acr: 'PL'}, // Province of Mulai
+    {placeid: '2036637970', clan: 'Nightfall Clan', category: 'Ranged', acr: 'NFC'}, // Fortress Noctem
+    {placeid: '257784240', clan: 'United Clan of ROBLOX', category: 'Ranged', acr: 'UCR'}, // Oriion
+    {placeid: '704633176', clan: 'United Clan of ROBLOX', category: 'Ranged', acr: 'UCR'}, // Horizon
+    {placeid: '2589348835', clan: 'RSF', category: 'Ranged', acr: 'RSF'}, // Galileo
+    {placeid: '3262357086', clan: 'RSF', category: 'Ranged', acr: 'RSF'}, // Arduous
+    {placeid: '3366185558', clan: 'RSF', category: 'Ranged', acr: 'RSF'}, // Arvore
+    {placeid: '2890894136', clan: 'RSF', category: 'Melee', acr: 'RSF'}, // Battlefield Zone
+    {placeid: '2351730401', clan: 'RSF', category: 'Ranged', acr: 'RSF'}, // Gulian Gorge
+    {placeid: '331295568', clan: 'Cobalt Nation', category: 'Melee', acr: 'CN'}, // Fortress Grotto
+    {placeid: '2341328394', clan: 'Cobalt Nation', category: 'Melee', acr: 'CN'}, // Valerius
+    {placeid: '2337204126', clan: 'Team Domino', category: 'Melee', acr: 'TD'}, // Bayfront Harbor
+    {placeid: '2578133852', clan: 'Federation of Arcadia', category: 'Ranged', acr: 'FoA'}, // 
+    {placeid: '1144829704', clan: 'Federation of Arcadia', category: 'Ranged', acr: 'FoA'}, // Shield World Novaan
+    {placeid: '3274071190', clan: 'The Tempus Imperium', category: 'Ranged', acr: 'TTI'}, // Outpost Sik
+    {placeid: '4222766350', clan: 'Sigmarite Empire', category: 'Ranged', acr: 'SE'}, // Sataur Valley
+    {placeid: '3482144906', clan: 'Petras Liberation Front', category: 'Ranged', acr: 'PLF'}, // Watchpoint Gibraltar
+    {placeid: '4572194478', clan: 'United Clan of ROBLOX', category: 'Melee', acr: 'UCR'}, // Outpost Leo
+    {placeid: '398361701', clan: 'The Dark Warriors.', category: 'Melee', acr: 'TDW'}, // Celvestia's Resurgence
+    {placeid: '409431042', clan: 'The Dark Warriors.', category: 'Melee', acr: 'TDW'}, // Uada's Forest
+    {placeid: '4484427399', clan: '|| Imperial Armada ||', category: 'Ranged', acr: 'IA'}, // Arcannian Frontier III
+    {placeid: '4480472063', clan: 'United States Armed Forces [USA]', category: 'Ranged', acr: "USAF"}, // Port Jackson
+    {placeid: '4399974518', clan: 'Petras Liberation Front', category: 'Ranged', acr: 'PLF'}, // Apec Command Post
+    {placeid: '2936078317', clan: 'Itvara', category: 'Melee', acr: 'Itvara'}, // Cosm
+    {placeid: '4127239925', clan: 'Fallen Defenders', category: 'Melee', acr: 'FD'}, // Kratos Core
+    {placeid: '834559339', clan: 'Aegis Core', category: 'Ranged', acr: 'AC'}, // Aegis Aetrio
+    {placeid: '810662312', clan: 'Aegis Core', category: 'Ranged', acr: 'AC'}, // Sapphire Compound
+    {placeid: '443736620', clan: 'The Dark Warriors.', category: 'Melee', acr: 'TDW'}, // Original Capital
+    {placeid: '1779037701', clan: 'Combat Assault Team', category: 'Ranged', acr: 'CAT'}, // Baseline 57
+    {placeid: '4558745672', clan: 'The Vykterrian Dominion', category: 'Ranged', acr: 'TVD'}, // The Docks
+    {placeid: '3325353137', clan: 'Ascarian Insurgency', category: 'Melee', acr: 'AI'}, // Port Venterus
+    {placeid: '4757026121', clan: 'The Vykterrian Dominion', category: 'Ranged', acr: 'TVD'}, // The Bio-Lab
+    {placeid: '4742160743', clan: 'Avidya', category: 'Melee', acr: 'Avidya'}, // Defiance
+    {placeid: '4566279544', clan: 'Order of the Crimson Eagle', category: 'Ranged', acr: 'OCE'}, // Eltran Front
+    {placeid: '4754639529', clan: 'The Robloxian Army', category: 'Ranged', acr: 'TRA'}, // Outpost Frostbite
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
@@ -141,7 +143,12 @@ const updateAll = async () => {
   return await Promise.all(arrayOfPlaceIds.map(item => anAsyncFunction(item)))
 };
 
+/*const asyncOfData = async () => {
+  return await 
+}*/
+
 let placeData = [];
+let enteredAfterUpdate = 0
 
 app.get('/', function (req, res) {
     MongoClient.connect(mongourl, {
@@ -163,7 +170,8 @@ app.get('/', function (req, res) {
       placeData: placeData,
     });
     var Destination = "https://discordapp.com/api/webhooks/686171187428327435/aHZkixYHKkT3FsJxipO4MsLXoFrhqirt-UBzCOkR2ePeT9CP5-4e7N0pnAmPJRmOUhLR"
-    var Content = "Forts have been loaded..."
+    enteredAfterUpdate = enteredAfterUpdate + 1
+    var Content = "RoClans has been visited " + enteredAfterUpdate + " times after the last update."
     var Message = {
       "content": Content
       }
