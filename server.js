@@ -57,6 +57,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '4742160743', clan: 'Avidya', category: 'Melee', acr: 'Avidya'}, // Defiance
     {placeid: '4566279544', clan: 'Order of the Crimson Eagle', category: 'Ranged', acr: 'OCE'}, // Eltran Front
     {placeid: '4754639529', clan: 'The Robloxian Army', category: 'Ranged', acr: 'TRA'}, // Outpost Frostbite
+    {placeid: '4035627462', clan: 'Dark Royal Military', category: 'Ranged', acr: 'DRM'}, // Warehouse
+    {placeid: '4535194097', clan: 'Immortal Robloxian Federation', category: 'Ranged', acr: 'IRF'}, // Port Kehl
+    {placeid: '4649719641', clan: 'The Steel Gladium', category: 'Ranged', acr: 'TSG'}, // Marine Island Outpost
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
