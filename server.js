@@ -60,6 +60,19 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '4035627462', clan: 'Dark Royal Military', category: 'Ranged', acr: 'DRM'}, // Warehouse
     {placeid: '4535194097', clan: 'Immortal Robloxian Federation', category: 'Ranged', acr: 'IRF'}, // Port Kehl
     {placeid: '4649719641', clan: 'The Steel Gladium', category: 'Ranged', acr: 'TSG'}, // Marine Island Outpost
+    {placeid: '4695573161', clan: 'Solar Nation', category: 'Melee', acr: 'SN'}, // Nova Port
+    {placeid: '4097416512', clan: 'Mesmer', category: 'Melee', acr: 'MSMR'}, // Frost Dragon
+    {placeid: '3684242877', clan: 'Ravager Ascendancy', category: 'Melee', acr: 'RA'}, // Outpost Ravage
+    {placeid: '1123837929', clan: 'Cryptic Legion', category: 'Melee', acr: 'CL'}, // Fort Cryptonium
+    {placeid: '1887750243', clan: 'Perma Frost', category: 'Melee', acr: 'PF'}, // Advection
+    {placeid: '3160652466', clan: 'Crimson Edge', category: 'Melee', acr: 'CE'}, // Fort Blood Shred
+    {placeid: '358183927', clan: 'The Bear Supremacy', category: 'Ranged', acr: 'BEAR'}, // Stronghold Union
+    {placeid: '3697873275', clan: 'Valania', category: 'Ranged', acr: 'VAL'}, // Ceresian Moss
+    {placeid: '1431624473', clan: 'The Bear Supremacy', category: 'Ranged', acr: 'BEAR'}, // Ancient Temple
+    {placeid: '1277238693', clan: 'Mesmer', category: 'Ranged', acr: 'MSMR'}, // Azuremyst
+    {placeid: '3900002819', clan: 'Mesmer', category: 'Ranged', acr: 'MSMR'}, // Saron
+    {placeid: '3019726111', clan: 'Mesmer', category: 'Ranged', acr: 'MSMR'}, // Siege of Talador
+    {placeid: '3128412043', clan: 'Delta Regiment', category: 'Ranged', acr: 'DELTA'}, // Stronghold Avena
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
