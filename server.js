@@ -42,7 +42,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '4572194478', clan: 'United Clan of ROBLOX', category: 'Melee', acr: 'UCR'}, // Outpost Leo
     {placeid: '398361701', clan: 'The Dark Warriors.', category: 'Melee', acr: 'TDW'}, // Celvestia's Resurgence
     {placeid: '409431042', clan: 'The Dark Warriors.', category: 'Melee', acr: 'TDW'}, // Uada's Forest
-    {placeid: '4484427399', clan: '|| Imperial Armada ||', category: 'Ranged', acr: 'IA'}, // Arcannian Frontier III
+    {placeid: '4484427399', clan: 'Imperial Armada', category: 'Ranged', acr: 'IA'}, // Arcannian Frontier III
     {placeid: '4480472063', clan: 'United States Armed Forces [USA]', category: 'Ranged', acr: "USAF"}, // Port Jackson
     {placeid: '4399974518', clan: 'Petras Liberation Front', category: 'Ranged', acr: 'PLF'}, // Apec Command Post
     {placeid: '2936078317', clan: 'Itvara', category: 'Melee', acr: 'Itvara'}, // Cosm
@@ -73,6 +73,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '3900002819', clan: 'Mesmer', category: 'Ranged', acr: 'MSMR'}, // Saron
     {placeid: '3019726111', clan: 'Mesmer', category: 'Ranged', acr: 'MSMR'}, // Siege of Talador
     {placeid: '3128412043', clan: 'Delta Regiment', category: 'Ranged', acr: 'DELTA'}, // Stronghold Avena
+    {placeid: '4689765421', clan: 'Darkheart Military', category: 'Melee', acr: 'DM'}, // Kyrel
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
