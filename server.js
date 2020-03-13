@@ -74,6 +74,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '3019726111', clan: 'Mesmer', category: 'Ranged', acr: 'MSMR'}, // Siege of Talador
     {placeid: '3128412043', clan: 'Delta Regiment', category: 'Ranged', acr: 'DELTA'}, // Stronghold Avena
     {placeid: '4689765421', clan: 'Darkheart Military', category: 'Melee', acr: 'DM'}, // Kyrel
+    {placeid: '4746083655', clan: 'Imperial Armada', category: 'Ranged', acr: 'IA'}, // Nova District
+    {placeid: '2389049159', clan: 'The First Encounter Assault Recon', category: 'Ranged', acr: 'FEAR'}, // Outpost Zorah
+    {placeid: '3080470331', clan: 'Team Domino', category: 'Melee', acr: 'TD'}, // Orios Keep
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
