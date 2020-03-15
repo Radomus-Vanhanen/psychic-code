@@ -77,6 +77,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '4746083655', clan: 'Imperial Armada', category: 'Ranged', acr: 'IA'}, // Nova District
     {placeid: '2389049159', clan: 'The First Encounter Assault Recon', category: 'Ranged', acr: 'FEAR'}, // Outpost Zorah
     {placeid: '3080470331', clan: 'Team Domino', category: 'Melee', acr: 'TD'}, // Orios Keep
+    {placeid: '1427580544', clan: 'The WIJ Alliance', category: 'Ranged', acr: 'WIJ'}, // Cerulean II
+    {placeid: '1427493600', clan: 'The WIJ Alliance', category: 'Ranged', acr: 'WIJ'}, // Indigo II
+    {placeid: '4065273310', clan: 'The Prime Syndicate', category: 'Ranged', acr: 'PRIME'}, // Erebus Mines
+    {placeid: '4690481102', clan: 'Aztecian Sovereignty', category: 'Ranged', acr: 'AZTEC'}, // Tenox II
+    {placeid: '4604275637', clan: 'Dark Militia', category: 'Ranged', acr: 'DM'}, // Dark Forge
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
