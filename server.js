@@ -82,6 +82,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '4065273310', clan: 'The Prime Syndicate', category: 'Ranged', acr: 'PRIME'}, // Erebus Mines
     {placeid: '4690481102', clan: 'Aztecian Sovereignty', category: 'Ranged', acr: 'AZTEC'}, // Tenox II
     {placeid: '4604275637', clan: 'Dark Militia', category: 'Ranged', acr: 'DM'}, // Dark Forge
+    {placeid: '1572904362', clan: 'Nighthawk Commandos', category: 'Ranged', acr: 'TNIC'}, // Arcon III
+    {placeid: '4522180262', clan: 'Dark Royal Military', category: 'Ranged', acr: 'DRM'}, // Warehouse II
+    {placeid: '4519387993', clan: 'Sleet Clan', category: 'Ranged', acr: 'SC'}, // Hailstorm
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
