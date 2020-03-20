@@ -85,6 +85,21 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '1572904362', clan: 'Nighthawk Commandos', category: 'Ranged', acr: 'TNIC'}, // Arcon III
     {placeid: '4522180262', clan: 'Dark Royal Military', category: 'Ranged', acr: 'DRM'}, // Warehouse II
     {placeid: '4519387993', clan: 'Sleet Clan', category: 'Ranged', acr: 'SC'}, // Hailstorm
+    {placeid: '4539955576', clan: 'The Duskan Front', category: 'Ranged', acr: 'TDF'}, // RAID ATLAS
+    {placeid: '3049238790', clan: 'Holy Dominion of Hanvahl', category: 'Ranged', acr: 'HDH'}, // Outpost Vallion
+    {placeid: '4535453538', clan: 'Holy Dominion of Hanvahl', category: 'Ranged', acr: 'HDH'}, // Ryvothan Arctic Port 
+    {placeid: '3453097650', clan: 'Astrylia', category: 'Melee', acr: 'Astrylia'}, // Stronghold Arcturus
+    {placeid: '3453097650', clan: 'Astrylia', category: 'Melee', acr: 'Astrylia'}, // Castle Antares
+    {placeid: '4766854816', clan: 'T O R M E N T', category: 'Melee', acr: 'TORMENT'}, // Equilibrium
+    {placeid: '3017012514', clan: 'The Forsaken Nation', category: 'Melee', acr: 'TFN'}, // Korvoxian Citadel
+    {placeid: '4757612848', clan: 'RTDF', category: 'Melee', acr: 'RTDF'}, // Fairzone Sparrow
+    {placeid: '4597071077', clan: 'Draconic Rise', category: 'Melee', acr: 'DR'}, // Zuifer
+    {placeid: '1095430150', clan: 'Team Domino', category: 'Melee', acr: 'TD'}, // Fort Aamon III
+    {placeid: '3812655543', clan: 'T O R M E N T', category: 'Melee', acr: 'TORMENT'}, // Fairzone
+    {placeid: '4661092875', clan: 'T O R M E N T', category: 'Melee', acr: 'TORMENT'}, // Equinox
+    {placeid: '4658980395', clan: 'T O R M E N T', category: 'Melee', acr: 'TORMENT'}, // Fort Turf
+    {placeid: '3540885449', clan: 'Royal Ravage', category: 'Melee', acr: 'RR'}, // Carnage 2
+    {placeid: '3752827341', clan: 'Ravager Ascendancy', category: 'Melee', acr: 'RA'}, // Vanguard Valley
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
