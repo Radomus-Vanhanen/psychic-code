@@ -100,6 +100,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '4658980395', clan: 'T O R M E N T', category: 'Melee', acr: 'TORMENT'}, // Fort Turf
     {placeid: '3540885449', clan: 'Royal Ravage', category: 'Melee', acr: 'RR'}, // Carnage 2
     {placeid: '3752827341', clan: 'Ravager Ascendancy', category: 'Melee', acr: 'RA'}, // Vanguard Valley
+    {placeid: '4390640983', clan: 'Phoenix Imperial', category: 'Ranged', acr: 'PI'}, // Castellum Amare
+    {placeid: '4391679582', clan: 'Reavers', category: 'Ranged', acr: 'Reavers'}, // The Paravel
+    {placeid: '4797478381', clan: 'Ravager Ascendancy', category: 'Melee', acr: 'RA'}, // Stronghold Estrago
+    {placeid: '2544677665', clan: 'Reborn Elites', category: 'Melee', acr: 'RE'}, // Fort Hydra
+    {placeid: '4716889018', clan: 'Avelon', category: 'Melee', acr: 'Avelon'}, // Almace II
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
