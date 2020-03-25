@@ -108,6 +108,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '4549748932', clan: 'Verque', category: 'Melee', acr: 'Verque'}, // Fort
     {placeid: '4788217166', clan: 'Republic of Aerius', category: 'Ranged', acr: 'RoA'}, // Tessera Junction
     {placeid: '4255203093', clan: 'New Athian Contingency', category: 'Ranged', acr: 'NAC'}, // Bloodzone
+    {placeid: '4778394659', clan: 'Hydra Order', category: 'Ranged', acr: 'HO'}, // Winter Fortification
+    {placeid: '4650572758', clan: 'Delta Regiment', category: 'Ranged', acr: 'DR'}, // Sector 280
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
