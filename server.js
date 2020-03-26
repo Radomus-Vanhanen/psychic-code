@@ -110,6 +110,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '4255203093', clan: 'New Athian Contingency', category: 'Ranged', acr: 'NAC'}, // Bloodzone
     {placeid: '4778394659', clan: 'Hydra Order', category: 'Ranged', acr: 'HO'}, // Winter Fortification
     {placeid: '4650572758', clan: 'Delta Regiment', category: 'Ranged', acr: 'DR'}, // Sector 280
+    {placeid: '4719160750', clan: 'Snow Core', category: 'Ranged', acr: 'SNOW'}, // Fort Snow
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
