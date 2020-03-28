@@ -110,7 +110,20 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '4255203093', clan: 'New Athian Contingency', category: 'Ranged', acr: 'NAC'}, // Bloodzone
     {placeid: '4778394659', clan: 'Hydra Order', category: 'Ranged', acr: 'HO'}, // Winter Fortification
     {placeid: '4650572758', clan: 'Delta Regiment', category: 'Ranged', acr: 'DR'}, // Sector 280
+    {placeid: '4784483425', clan: 'F.E.A.R Vanguard', category: 'Melee', acr: 'FEAR:VG'}, // Outpost Blanc
     {placeid: '4719160750', clan: 'Snow Core', category: 'Ranged', acr: 'SNOW'}, // Fort Snow
+    {placeid: '4600667872', clan: 'Vestarian Republic', category: 'Melee', acr: 'V-REP'}, // Grove
+    {placeid: '4625365666', clan: 'Empire of the Hand', category: 'Ranged', acr: 'EOTH'}, // Nirauan
+    {placeid: '453987152', clan: 'The First Encounter Assault Recon', category: 'Ranged', acr: 'FEAR'}, // Fort Alianor II
+    {placeid: '3652063793', clan: 'ATLAS', category: 'Ranged', acr: 'ATLAS'}, // Battlefield
+    {placeid: '2636059056', clan: 'st0rmtr00p3rz', category: 'Ranged', acr: 'st0rm'}, // Hangar
+    {placeid: '1483729458', clan: 'A-NEXO', category: 'Ranged', acr: 'A-NEXO'}, // Tanastrophia
+    {placeid: '4790960806', clan: 'The Prime Syndicate', category: 'Ranged', acr: 'PRIME'}, // Citadel of Adun
+    {placeid: '4780866729', clan: 'Sinister Realm', category: 'Ranged', acr: 'SIRE'}, // Viduus Bridge
+    {placeid: '3455638627', clan: 'Frizium', category: 'Ranged', acr: 'FRIZ'}, // Visiri Abs
+    {placeid: '4619862272', clan: 'Infinite Spectrum', category: 'Melee', acr: 'IS'}, // Fort Oterouna
+    {placeid: '2032712636', clan: 'Spectral', category: 'Melee', acr: 'Spectral'}, // Outpost Mining Kastner
+    {placeid: '1509686062', clan: 'Limited Light Army Corps', category: 'Melee', acr: 'LLAC'}, // Fort Ordenix
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
