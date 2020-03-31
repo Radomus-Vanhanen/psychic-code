@@ -124,6 +124,15 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '4619862272', clan: 'Infinite Spectrum', category: 'Melee', acr: 'IS'}, // Fort Oterouna
     {placeid: '2032712636', clan: 'Spectral', category: 'Melee', acr: 'Spectral'}, // Outpost Mining Kastner
     {placeid: '1509686062', clan: 'Limited Light Army Corps', category: 'Melee', acr: 'LLAC'}, // Fort Ordenix
+    {placeid: '742389354', clan: 'Skilled Force', category: 'Melee', acr: 'SF'}, // Island of Esperus
+    {placeid: '4707989929', clan: 'Royal Ravage', category: 'Melee', acr: 'RR'}, // Desert Island
+    {placeid: '110309360', clan: 'The United World Federation', category: 'Ranged', acr: 'UWF'}, // The Haven Archipelago
+    {placeid: '3506312127', clan: 'The Mobile Bloxxers', category: 'Ranged', acr: 'MB'}, // Cryogen Outpost
+    {placeid: '1076513764', clan: 'Roblox Grand Republic Military', category: 'Ranged', acr: 'RGRM'}, // Geonosis
+    {placeid: '2805061965', clan: 'Roblox Grand Republic Military', category: 'Ranged', acr: 'RGRM'}, // Mimban
+    {placeid: '2770139829', clan: 'Stargate Program', category: 'Ranged', acr: 'SP'}, // Area 52
+    {placeid: '4809314895', clan: 'Sinister Realm', category: 'Melee', acr: 'SIRE'}, // Fairzone
+    {placeid: '4780866729', clan: 'Sinister Realm', category: 'Melee', acr: 'SIRE'}, // Viduus Ridge
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
