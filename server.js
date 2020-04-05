@@ -133,6 +133,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '2770139829', clan: 'Stargate Program', category: 'Ranged', acr: 'SP'}, // Area 52
     {placeid: '4809314895', clan: 'Sinister Realm', category: 'Melee', acr: 'SIRE'}, // Fairzone
     {placeid: '4780866729', clan: 'Sinister Realm', category: 'Melee', acr: 'SIRE'}, // Viduus Ridge
+    {placeid: '1259650958', clan: 'Dusk Revolution', category: 'Ranged', acr: 'D-REV'}, // Dusk Revolution
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
