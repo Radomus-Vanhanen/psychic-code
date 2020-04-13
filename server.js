@@ -134,6 +134,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '4809314895', clan: 'Sinister Realm', category: 'Melee', acr: 'SIRE'}, // Fairzone
     {placeid: '4780866729', clan: 'Sinister Realm', category: 'Melee', acr: 'SIRE'}, // Viduus Ridge
     {placeid: '1259650958', clan: 'Dusk Revolution', category: 'Ranged', acr: 'D-REV'}, // Dusk Revolution
+    {placeid: '4875752556', clan: 'Revolution of Royales', category: 'Ranged', acr: 'RoR'}, // Forest Warzone
+    {placeid: '4621065105', clan: 'Revolution of Royales', category: 'Ranged', acr: 'RoR'}, // Arctic Frontier
+    {placeid: '4812491316', clan: 'FPurple RPower', category: 'Melee', acr: 'FR'}, // Outpost Storm
+    {placeid: '4695573161', clan: 'Solar Nation', category: 'Melee', acr: 'SN'}, // Nova Base
+    {placeid: '4862489151', clan: 'Zenom', category: 'Melee', acr: 'ZEN'}, // Apex
+    {placeid: '3536382723', clan: 'Zenom', category: 'Melee', acr: 'ZEN'}, // Ignis
+    {placeid: '4830278616', clan: 'The Noble Imperium', category: 'Melee', acr: 'TNI'}, // Stronghold Sentinel | Amethyst Frontier
+    {placeid: '4876026454', clan: 'Dracturus', category: 'Melee', acr: 'Dracturus'}, // Dragon's Den
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
