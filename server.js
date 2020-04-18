@@ -31,7 +31,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '3366185558', clan: 'RSF', category: 'Ranged', acr: 'RSF'}, // Arvore
     {placeid: '2890894136', clan: 'RSF', category: 'Melee', acr: 'RSF'}, // Battlefield Zone
     {placeid: '2351730401', clan: 'RSF', category: 'Ranged', acr: 'RSF'}, // Gulian Gorge
-    {placeid: '4556649895', clan: 'Cobalt Nation', category: 'Melee', acr: 'CN'}, // Fortress Gr2tto
+    {placeid: '4833813328', clan: 'Cobalt Nation', category: 'Melee', acr: 'CN'}, // Fortress Gr2tto
     {placeid: '2341328394', clan: 'Cobalt Nation', category: 'Melee', acr: 'CN'}, // Valerius
     {placeid: '2337204126', clan: 'Team Domino', category: 'Melee', acr: 'TD'}, // Bayfront Harbor
     {placeid: '2578133852', clan: 'Federation of Arcadia', category: 'Ranged', acr: 'FoA'}, // 
@@ -102,7 +102,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '3752827341', clan: 'Ravager Ascendancy', category: 'Melee', acr: 'RA'}, // Vanguard Valley
     {placeid: '4390640983', clan: 'Phoenix Imperial', category: 'Ranged', acr: 'PI'}, // Castellum Amare
     {placeid: '4391679582', clan: 'Reavers', category: 'Ranged', acr: 'Reavers'}, // The Paravel
-    {placeid: '4797478381', clan: 'Ravager Ascendancy', category: 'Melee', acr: 'RA'}, // Stronghold Estrago
     {placeid: '2544677665', clan: 'Reborn Elites', category: 'Melee', acr: 'RE'}, // Fort Hydra
     {placeid: '4716889018', clan: 'Avelon', category: 'Melee', acr: 'Avelon'}, // Almace II
     {placeid: '4549748932', clan: 'Verque', category: 'Melee', acr: 'Verque'}, // Fort
@@ -261,7 +260,7 @@ app.get('/', function (req, res) {
     enteredAfterUpdate = enteredAfterUpdate + 1
     var Content = "RoClans has been visited " + enteredAfterUpdate + " times after the last update."
     if (enteredAfterUpdate < 2) {
-      require('/')
+      res.redirect('/');
     }
     var Message = {
       "content": Content
