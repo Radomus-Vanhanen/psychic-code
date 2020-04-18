@@ -261,6 +261,7 @@ app.get('/', function (req, res) {
     var Content = "RoClans has been visited " + enteredAfterUpdate + " times after the last update."
     if (enteredAfterUpdate < 2) {
       Content = "Server starting..."
+      app.use('/')
     }
   var Message = {
       "content": Content
