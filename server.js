@@ -260,7 +260,7 @@ app.get('/', function (req, res) {
     enteredAfterUpdate = enteredAfterUpdate + 1
     var Content = "RoClans has been visited " + enteredAfterUpdate + " times after the last update."
     if (enteredAfterUpdate < 2) {
-      res.redirect(req.get('referer'));
+      Content = "Server starting..."
     }
   var Message = {
       "content": Content
