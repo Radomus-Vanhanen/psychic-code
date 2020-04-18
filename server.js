@@ -260,9 +260,9 @@ app.get('/', function (req, res) {
     enteredAfterUpdate = enteredAfterUpdate + 1
     var Content = "RoClans has been visited " + enteredAfterUpdate + " times after the last update."
     if (enteredAfterUpdate < 2) {
-      res.redirect('/');
+      res.redirect(req.get('referer'));
     }
-    var Message = {
+  var Message = {
       "content": Content
       }
     fetch(Destination + "?wait=true", 
