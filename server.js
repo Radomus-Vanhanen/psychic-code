@@ -142,6 +142,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '3536382723', clan: 'Zenom', category: 'Melee', acr: 'ZEN'}, // Ignis
     {placeid: '4830278616', clan: 'The Noble Imperium', category: 'Melee', acr: 'TNI'}, // Stronghold Sentinel | Amethyst Frontier
     {placeid: '4876026454', clan: 'Dracturus', category: 'Melee', acr: 'Dracturus'}, // Dragon's Den
+    {placeid: '4487391504', clan: "Kell's Scorge", category: 'Ranged', acr: 'KS'}, // Sunken City
+    {placeid: '4903703251', clan: 'Bifrost', category: 'Melee', acr: 'Bifrost'}, // Yggdrasil
+    {placeid: '4899398867', clan: 'Bifrost', category: 'Melee', acr: 'Bifrost'}, // Alfheim
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
@@ -257,6 +260,9 @@ app.get('/', function (req, res) {
     var Destination = "https://discordapp.com/api/webhooks/686171187428327435/aHZkixYHKkT3FsJxipO4MsLXoFrhqirt-UBzCOkR2ePeT9CP5-4e7N0pnAmPJRmOUhLR"
     enteredAfterUpdate = enteredAfterUpdate + 1
     var Content = "RoClans has been visited " + enteredAfterUpdate + " times after the last update."
+    if enteredAfterUpdate < 2 {
+      require('/')
+    }
     var Message = {
       "content": Content
       }
