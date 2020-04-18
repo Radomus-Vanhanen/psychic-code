@@ -260,7 +260,7 @@ app.get('/', function (req, res) {
     var Destination = "https://discordapp.com/api/webhooks/686171187428327435/aHZkixYHKkT3FsJxipO4MsLXoFrhqirt-UBzCOkR2ePeT9CP5-4e7N0pnAmPJRmOUhLR"
     enteredAfterUpdate = enteredAfterUpdate + 1
     var Content = "RoClans has been visited " + enteredAfterUpdate + " times after the last update."
-    if enteredAfterUpdate < 2 {
+    if (enteredAfterUpdate < 2) {
       require('/')
     }
     var Message = {
