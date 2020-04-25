@@ -144,6 +144,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '4487391504', clan: "Kell's Scorge", category: 'Ranged', acr: 'KS'}, // Sunken City
     {placeid: '4903703251', clan: 'Bifrost', category: 'Melee', acr: 'Bifrost'}, // Yggdrasil
     {placeid: '4899398867', clan: 'Bifrost', category: 'Melee', acr: 'Bifrost'}, // Alfheim
+    {placeid: '1171632441', clan: 'Legion Bavarian', category: 'Melee', acr: 'LB'}, // Arcanum Island
+    {placeid: '549007275', clan: 'Legion Bavarian', category: 'Melee', acr: 'LB'}, // Baxite Mines
+    {placeid: '4562752468', clan: 'Legion Bavarian', category: 'Melee', acr: 'LB'}, // Origin
+    {placeid: '4868175234', clan: 'F.E.A.R. Vanguard', category: 'Melee', acr: 'FEAR VG'}, // Fairground
+    {placeid: '4665342228', clan: 'The Hakaian Enclave', category: 'Melee', acr: 'HAKAI'}, // Blood Harbor
+    {placeid: '4658914290', clan: 'The Hakaian Enclave', category: 'Melee', acr: 'HAKAI'}, // Classic Dojo
+    {placeid: '4804285455', clan: 'Frozen Spire', category: 'Melee', acr: 'FS'}, // Outpost Isolation || FORT
+    {placeid: '4918224620', clan: 'RCMF', category: 'Ranged', acr: 'RCMF'}, // Outpost Galaxy
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
