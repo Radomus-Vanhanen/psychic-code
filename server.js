@@ -152,6 +152,28 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '4658914290', clan: 'The Hakaian Enclave', category: 'Melee', acr: 'HAKAI'}, // Classic Dojo
     {placeid: '4804285455', clan: 'Frozen Spire', category: 'Melee', acr: 'FS'}, // Outpost Isolation || FORT
     {placeid: '4918224620', clan: 'RCMF', category: 'Ranged', acr: 'RCMF'}, // Outpost Galaxy
+    {placeid: '5057259089', clan: 'RTDF', category: 'Melee', acr: 'RTDF'}, // Rhahanvial
+    {placeid: '4836036504', clan: 'Volcanic Reign', category: 'Melee', acr: 'VR'}, // Volcanic Isle
+    {placeid: '4911916729', clan: 'TR Sentinels', category: 'Melee', acr: 'TRS'}, // Outpost Invictus
+    {placeid: '4962685704', clan: 'Exofleet', category: 'Melee', acr: 'EXO'}, // Outpost Aquarius
+    {placeid: '4915720496', clan: 'Exofleet', category: 'Melee', acr: 'EXO'}, // Border of Exodus
+    {placeid: '4843165058', clan: 'Revirious', category: 'Melee', acr: 'Revirious'}, // Outpost Revictus
+    {placeid: '4600659592', clan: 'Vestarian Republic', category: 'Melee', acr: 'V-REP'}, // Ekon II
+    {placeid: '4861497338', clan: 'Vestarian Republic', category: 'Melee', acr: 'V-REP'}, // Legacy
+    {placeid: '4819348153', clan: 'Glacial Recon', category: 'Melee', acr: 'GR'}, // Onlooker's Peak
+    {placeid: '4847077569', clan: 'Glacial Recon', category: 'Melee', acr: 'GR'}, // Deserted Tundra
+    {placeid: '4794515867', clan: 'Glacial Recon', category: 'Melee', acr: 'GR'}, // Wharf District
+    {placeid: '4794108412', clan: 'Glacial Recon', category: 'Melee', acr: 'GR'}, // Archfield
+    {placeid: '5057600125', clan: 'MORS', category: 'Melee', acr: 'MORS'}, // Ruins of Generations
+    {placeid: '4848520919', clan: 'Lone Star Empire', category: 'Melee', acr: 'LSE'}, // Canal Rush
+    {placeid: '4848520919', clan: 'Lone Star Empire', category: 'Melee', acr: 'LSE'}, // Canal Rush
+    {placeid: '4848520919', clan: 'Lone Star Empire', category: 'Melee', acr: 'LSE'}, // Canal Rush
+    {placeid: '4848520919', clan: 'Lone Star Empire', category: 'Melee', acr: 'LSE'}, // Canal Rush
+    {placeid: '4848520919', clan: 'Lone Star Empire', category: 'Melee', acr: 'LSE'}, // Canal Rush
+    {placeid: '4848520919', clan: 'Lone Star Empire', category: 'Melee', acr: 'LSE'}, // Canal Rush
+    {placeid: '4848520919', clan: 'Lone Star Empire', category: 'Melee', acr: 'LSE'}, // Canal Rush
+    {placeid: '4848520919', clan: 'Lone Star Empire', category: 'Melee', acr: 'LSE'}, // Canal Rush
+    {placeid: '4848520919', clan: 'Lone Star Empire', category: 'Melee', acr: 'LSE'}, // Canal Rush
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
