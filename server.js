@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // MAIN ARRAYS
 
   var arrayOfPlaceIds = [
-    {placeid: '1647005353', clan: 'Noble Blade', category: 'Melee / Ranged', acr: 'NB'}, // Section Delta
+    {placeid: '4930336904', clan: 'Noble Blade', category: 'Melee / Ranged', acr: 'NB'}, // Concealed Realm
     {placeid: '1476001068', clan: 'The Robloxian Army', category: 'Ranged', acr: 'TRA'}, // Fort Rana
     {placeid: '1542281150', clan: 'The Robloxian Army', category: 'Melee', acr: 'TRA'}, // Fort Beaumont
     {placeid: '2007110262', clan: 'The Vaktovian Army', category: 'Ranged', acr: 'VAK'}, // Port Maersk [EASY MODE]
@@ -179,8 +179,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
   var resourceData = [
     {itemid: '4544019605', itemname: 'RoClans Sword', imageid: 'https://tr.rbxcdn.com/21d030e4249f8604330f0791010e08e9/420/420/Gear/Png', itemcreator: 'Lametta', itemdesc: 'A customizable sword that prevents certain exploits and many latency related issues.'},
-    {itemid: '543918030', itemname: 'Uniformed', imageid: 'https://images.squarespace-cdn.com/content/v1/5c4afa007c9327f7a221518f/1548706752190-4CR2TPGRBNUU5WOOW8JC/ke17ZwdGBToddI8pDm48kBhs0kXmJu3pAC_LFF99rKVZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7eaDBaxyzPPG4B3J3_Z93rYLky5fjRrZeLmMK3F2aytfjfg4x4lXesDnM4MUpb-Vdw/scroll_128.png', itemcreator: 'Partixel', itemdesc: 'A uniform selection system. More information here: https://devforum.roblox.com/t/uniformed-a-free-opensource-fe-compatable-uniform-selection-system/63923'},
-    {itemid: '5017994048', itemname: 'CCR Ban List', imageid: 'https://images.squarespace-cdn.com/content/v1/5c4afa007c9327f7a221518f/1548706752190-4CR2TPGRBNUU5WOOW8JC/ke17ZwdGBToddI8pDm48kBhs0kXmJu3pAC_LFF99rKVZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7eaDBaxyzPPG4B3J3_Z93rYLky5fjRrZeLmMK3F2aytfjfg4x4lXesDnM4MUpb-Vdw/scroll_128.png', itemcreator: 'Paralusuz', itemdesc: 'Clan Cheater Register Global Banlist, ranks cheaters in a database which depends on the severity of the action. Tier 1 will ban on sight, tier 2 will request to kick, and tier 3 will send a warning.'},
+    {itemid: '543918030', itemname: 'Uniformed', imageid: 'https://www.freeiconspng.com/uploads/scroll-icon-7.png', itemcreator: 'Partixel', itemdesc: 'A uniform selection system. More information here: https://devforum.roblox.com/t/uniformed-a-free-opensource-fe-compatable-uniform-selection-system/63923'},
+    {itemid: '5017994048', itemname: 'CCR Ban List', imageid: 'https://t3.rbxcdn.com/64d34abd0279a4c9373acfd46418c8fd', itemcreator: 'Paralusuz', itemdesc: 'Clan Cheater Register Global Banlist, ranks cheaters in a database which depends on the severity of the action. Tier 1 will ban on sight, tier 2 will request to kick, and tier 3 will send a warning.'},
  
   ];
 
