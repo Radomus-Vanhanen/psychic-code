@@ -165,15 +165,15 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '4794515867', clan: 'Glacial Recon', category: 'Melee', acr: 'GR'}, // Wharf District
     {placeid: '4794108412', clan: 'Glacial Recon', category: 'Melee', acr: 'GR'}, // Archfield
     {placeid: '5057600125', clan: 'MORS', category: 'Melee', acr: 'MORS'}, // Ruins of Generations
-    {placeid: '4848520919', clan: 'Lone Star Empire', category: 'Melee', acr: 'LSE'}, // Canal Rush
-    {placeid: '4848520919', clan: 'Lone Star Empire', category: 'Melee', acr: 'LSE'}, // Canal Rush
-    {placeid: '4848520919', clan: 'Lone Star Empire', category: 'Melee', acr: 'LSE'}, // Canal Rush
-    {placeid: '4848520919', clan: 'Lone Star Empire', category: 'Melee', acr: 'LSE'}, // Canal Rush
-    {placeid: '4848520919', clan: 'Lone Star Empire', category: 'Melee', acr: 'LSE'}, // Canal Rush
-    {placeid: '4848520919', clan: 'Lone Star Empire', category: 'Melee', acr: 'LSE'}, // Canal Rush
-    {placeid: '4848520919', clan: 'Lone Star Empire', category: 'Melee', acr: 'LSE'}, // Canal Rush
-    {placeid: '4848520919', clan: 'Lone Star Empire', category: 'Melee', acr: 'LSE'}, // Canal Rush
-    {placeid: '4848520919', clan: 'Lone Star Empire', category: 'Melee', acr: 'LSE'}, // Canal Rush
+    {placeid: '4848520919', clan: 'Lone Star Empire', category: 'Ranged', acr: 'LSE'}, // Canal Rush
+    {placeid: '4949955862', clan: 'Consortium Of Steel', category: 'Melee', acr: 'CoS'}, // Shadow Fall
+    {placeid: '4985456363', clan: 'Greenskin Boyz', category: 'Ranged', acr: 'ORKz'}, // Looted Stronghold
+    {placeid: '4820762079', clan: 'The Shuriman Empire', category: 'Ranged', acr: 'SHURIMA'}, // Serpent's Pass
+    {placeid: '5015067801', clan: 'Reign of Chaos', category: 'Ranged', acr: 'RoC'}, // Altera Stronghold
+    {placeid: '5012971384', clan: 'Union of Soviet Bear Republic', category: 'Ranged', acr: 'USBR'}, // Franxx
+    {placeid: '4920644419', clan: 'Vathienia', category: 'Ranged', acr: 'V'}, // Celeste 4
+    {placeid: '4873974045', clan: 'Extension Unit', category: 'Ranged', acr: 'EU'}, // Fort Fathom
+    {placeid: '5015188811', clan: 'Phoenix Imperial', category: 'Ranged', acr: 'PI'}, // Castellum Nix
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
