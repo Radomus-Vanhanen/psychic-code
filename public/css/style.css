@@ -52,6 +52,13 @@ body {
     background-color: rgb(36, 36, 36);
 }
 
+.refresh {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+}
+
 /*PLACE CELLS*/
 #placeCells {
     display: grid;
