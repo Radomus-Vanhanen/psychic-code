@@ -174,6 +174,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '4920644419', clan: 'Vathienia', category: 'Ranged', acr: 'V'}, // Celeste 4
     {placeid: '4873974045', clan: 'Extension Unit', category: 'Ranged', acr: 'EU'}, // Fort Fathom
     {placeid: '5015188811', clan: 'Phoenix Imperial', category: 'Ranged', acr: 'PI'}, // Castellum Nix
+    {placeid: '569810765', clan: 'ROBLOX Bloxxers United', category: 'Ranged', acr: 'RBU'}, // Outpost Theta
+    {placeid: '4980789156', clan: 'Prime Syndicate', category: 'Melee', acr: 'PS'}, // Castrum Reverti
+    {placeid: '5052985159', clan: 'Frozen Spire', category: 'Melee', acr: 'FS'}, // Outpost Glacier
+    {placeid: '5130625897', clan: 'Snow Core', category: 'Melee', acr: 'SNOW'}, // Aestus Citadel
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
