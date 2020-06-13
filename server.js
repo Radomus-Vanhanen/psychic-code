@@ -178,6 +178,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '4980789156', clan: 'Prime Syndicate', category: 'Melee', acr: 'PS'}, // Castrum Reverti
     {placeid: '5052985159', clan: 'Frozen Spire', category: 'Melee', acr: 'FS'}, // Outpost Glacier
     {placeid: '5130625897', clan: 'Snow Core', category: 'Melee', acr: 'SNOW'}, // Aestus Citadel
+    {placeid: '5090676014', clan: 'MORS', category: 'Melee', acr: 'MORS'}, // Agnitum Dolor
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
