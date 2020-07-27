@@ -52,7 +52,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '443736620', clan: 'The Dark Warriors.', category: 'Melee', acr: 'TDW'}, // Original Capital
     {placeid: '1779037701', clan: 'Combat Assault Team', category: 'Ranged', acr: 'CAT'}, // Baseline 57
     {placeid: '4558745672', clan: 'The Vykterrian Dominion', category: 'Ranged', acr: 'TVD'}, // The Docks
-    {placeid: '3325353137', clan: 'Ascarian Insurgency', category: 'Melee', acr: 'AI'}, // Port Venterus
+    {placeid: '3325353137', clan: 'Ascarian Insurgency', category: 'Melee', acr: 'SCAR'}, // Port Venterus
+    {placeid: '5001646915', clan: 'Ascarian Insurgency', category: 'Melee', acr: 'SCAR'}, // Delta's Path
+    {placeid: '5040351758', clan: 'Ascarian Insurgency', category: 'Melee', acr: 'SCAR'}, // Dunes of Ascaria
     {placeid: '4757026121', clan: 'The Vykterrian Dominion', category: 'Ranged', acr: 'TVD'}, // The Bio-Lab
     {placeid: '4742160743', clan: 'Avidya', category: 'Melee', acr: 'Avidya'}, // Defiance
     {placeid: '4566279544', clan: 'Order of the Crimson Eagle', category: 'Ranged', acr: 'OCE'}, // Eltran Front
@@ -179,6 +181,24 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '5052985159', clan: 'Frozen Spire', category: 'Melee', acr: 'FS'}, // Outpost Glacier
     {placeid: '5130625897', clan: 'Snow Core', category: 'Melee', acr: 'SNOW'}, // Aestus Citadel
     {placeid: '5090676014', clan: 'MORS', category: 'Melee', acr: 'MORS'}, // Agnitum Dolor
+    {placeid: '5202622659', clan: 'Aello', category: 'Melee', acr: 'Aello'}, // Nirvana
+    {placeid: '5199503427', clan: 'United Champions', category: 'Melee', acr: 'UC'}, // Lava Oppidum
+    {placeid: '5192921677', clan: 'United Champions', category: 'Ranged', acr: 'UC'}, // Champions Praedium
+    {placeid: '5116713590', clan: 'MaIicious', category: 'Melee', acr: 'MaIicious'}, // Predatorial
+    {placeid: '5274844607', clan: 'Ravager Ascendancy', category: 'Melee', acr: 'RA'}, // Dubway
+    {placeid: '5229047912', clan: 'Legion Bavarian', category: 'Melee', acr: 'LB'}, // Lions Academy
+    {placeid: '5107881641', clan: 'Evercia', category: 'Melee', acr: 'Evercia'}, // Beach Party
+    {placeid: '5210849024', clan: 'The Genesis Imperial', category: 'Ranged', acr: 'TGI'}, // Facilius
+    {placeid: '5208770424', clan: 'λggression', category: 'Ranged', acr: 'AGR'}, // Athens
+    {placeid: '5220604939', clan: 'United Champions', category: 'Ranged', acr: 'UC'}, // Avenue
+    {placeid: '5199467752', clan: 'The Devotion Corps', category: 'Ranged', acr: 'TDC'}, // Fort Xycron
+    {placeid: '5149826815', clan: 'The Extrovian Empire', category: 'Ranged', acr: 'TEE'}, // Outpost Nova
+    {placeid: '5149598446', clan: 'The Vykterrian Dominion', category: 'Ranged', acr: 'TVD'}, // Aridian Communications Bay
+    {placeid: '5339044218', clan: 'OutIaw Posse', category: 'Ranged', acr: 'OP'}, // The Badlands
+    {placeid: '5341232067', clan: 'Holy Ryvothan Empire', category: 'Ranged', acr: 'HRE'}, // Outpost Vallion
+    {placeid: '5350742332', clan: 'The Grand Union of Frostaria', category: 'Ranged', acr: 'TGU'}, // Celeste II
+    {placeid: '5381922231', clan: 'United Champions', category: 'Ranged', acr: 'UC'}, // Outpost Azula
+    {placeid: '5383664598', clan: 'Ragnarok Aerial', category: 'Ranged', acr: 'RA'}, // Rexturd II
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
