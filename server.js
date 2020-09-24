@@ -13,6 +13,18 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(session({
+store: new MongoStore({
+    // Basic usage
+    host: 'localhost', // Default, optional
+    port: 27017, // Default, optional
+    db: 'roclans', // Required
+
+    // Advanced options (optional)
+    autoReconnect: true, // Default
+
+})
+
 // MAIN ARRAYS
 
   var arrayOfPlaceIds = [
@@ -47,8 +59,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '4399974518', clan: 'Petras Liberation Front', category: 'Ranged', acr: 'PLF'}, // Apec Command Post
     {placeid: '2936078317', clan: 'Itvara', category: 'Melee', acr: 'Itvara'}, // Cosm
     {placeid: '4127239925', clan: 'Fallen Defenders', category: 'Melee', acr: 'FD'}, // Kratos Core
-    {placeid: '834559339', clan: 'Aegis Core', category: 'Ranged', acr: 'AC'}, // Aegis Aetrio
-    {placeid: '810662312', clan: 'Aegis Core', category: 'Ranged', acr: 'AC'}, // Sapphire Compound
+    {placeid: '834559339', clan: 'Aegis Core', category: 'Ranged', acr: 'AEGIS'}, // Aegis Aetrio
+    {placeid: '810662312', clan: 'Aegis Core', category: 'Ranged', acr: 'AEGIS'}, // Sapphire Compound
     {placeid: '443736620', clan: 'The Dark Warriors.', category: 'Melee', acr: 'TDW'}, // Original Capital
     {placeid: '1779037701', clan: 'Combat Assault Team', category: 'Ranged', acr: 'CAT'}, // Baseline 57
     {placeid: '4558745672', clan: 'The Vykterrian Dominion', category: 'Ranged', acr: 'TVD'}, // The Docks
@@ -199,6 +211,21 @@ app.use(bodyParser.urlencoded({ extended: true }));
     {placeid: '5350742332', clan: 'The Grand Union of Frostaria', category: 'Ranged', acr: 'TGU'}, // Celeste II
     {placeid: '5381922231', clan: 'United Champions', category: 'Ranged', acr: 'UC'}, // Outpost Azula
     {placeid: '5383664598', clan: 'Ragnarok Aerial', category: 'Ranged', acr: 'RA'}, // Rexturd II
+    {placeid: '5122058373', clan: 'Volcanic Reign', category: 'Melee', acr: 'VR'}, // Animarium
+    {placeid: '5078896951', clan: 'Evercia', category: 'Melee', acr: 'Evercia'}, // Coastal Ivory
+    {placeid: '4918741664', clan: 'Narionka', category: 'Melee', acr: 'Narionka'}, // Fort EqualNumbersRaid
+    {placeid: '5263852083', clan: 'Circle of Chaos', category: 'Melee', acr: 'CHAOS'}, // Sentinel
+    {placeid: '5107881641', clan: 'Evercia', category: 'Melee', acr: 'Evercia'}, // Beach Party
+    {placeid: '5607947910', clan: 'Xadious', category: 'Melee', acr: 'Xadious'}, // Lava Expanse
+    {placeid: '5404359294', clan: 'Lithia', category: 'Melee', acr: 'Lithia'}, // Lollipops
+    {placeid: '5571220274', clan: 'Vestroia', category: 'Melee', acr: 'Vestroia'}, // Delta City Stronghold
+    {placeid: '5001133094', clan: 'Arozen', category: 'Melee', acr: 'Arozen'}, // Fort Aros
+    {placeid: '4658721850', clan: 'Ravager Ascendancy', category: 'Melee', acr: 'RA'}, // Coastal Quarry
+    {placeid: '4950244709', clan: 'Aegis Reapers', category: 'Melee', acr: 'AEGIS'}, // Halloween's End
+    {placeid: '4962685704', clan: 'Exofleet', category: 'Melee', acr: 'EXO'}, // Frontier
+    {placeid: '5192786964', clan: 'Lithia', category: 'Melee', acr: 'Lithia'}, // Fairzone Nexus
+    {placeid: '5672932998', clan: 'ImmortaIis', category: 'Melee', acr: 'ImmortaIis'}, // Ukishima batoru
+    {placeid: '4561915632', clan: 'Nightfall Clan', category: 'Melee', acr: 'NFC'}, // Alpine Hills II
   ];
   // {placeid: '', clan: '', category: ''}, // 
 
