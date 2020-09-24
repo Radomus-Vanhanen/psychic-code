@@ -13,18 +13,6 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(session({
-store: new MongoStore({
-    // Basic usage
-    host: 'localhost', // Default, optional
-    port: 27017, // Default, optional
-    db: 'roclans', // Required
-
-    // Advanced options (optional)
-    autoReconnect: true, // Default
-
-})
-
 // MAIN ARRAYS
 
   var arrayOfPlaceIds = [
@@ -272,6 +260,7 @@ function updatePlace(placeName, clanName, placeIcon, playing, placeid, category)
   console.log("Place: " + placeName)
   console.log("Playing: " + playing)
   MongoClient.connect(mongourl, {
+    autoReconnect: true, // Default
     useNewUrlParser: true,
     useUnifiedTopology: true
     }, function(err, db) {
