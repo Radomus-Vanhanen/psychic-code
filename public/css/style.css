@@ -52,14 +52,14 @@ body {
     background-color: rgb(36, 36, 36);
 }
 
-/*.refresh {
+.refresh {
     color: white;
     font-weight: bold;
     text-align: center;
     font-size: 24px;
 }
 
-.circles{
+/*.circles{
     position: absolute;
     top: 0;
     left: 0;
