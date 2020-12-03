@@ -5,6 +5,8 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
+const guild = client.guilds.cache.get("783979448173199371");
+
 var PeopleInRole = guild.roles.resolve('783991612383428609').members
 
 
