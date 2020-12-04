@@ -8,7 +8,7 @@ client.once('ready', () => {
 // COMMAND
 client.on("message", message => {
 	var prefix = "!";
-	var args = message.content.substring(prefix.length).split (" ");
+	//var args = message.content.substring(prefix.length).split (" ");
 
 	client.on('message', message => {
 		if (message.content.split(' ')[0] == '/b')
@@ -19,12 +19,12 @@ client.on("message", message => {
 			})
 	})
 
-if (message.content.startsWith(prefix + "go")) {
+if (message.content.startsWith(prefix + "mdm")) {
 	if (!message.member.hasPermission("ADMINISTRATOR")) return
 
 	let args = message.content.split(" ").splice(1)
 	var argresult = args.join(' ')
-	guild.members.forEach(member => {
+	message.guild.members.forEach(member => {
 		if (member.roles.has("Messager")){
 			member.send(`${argresult}\n ${member}`)
 		}
