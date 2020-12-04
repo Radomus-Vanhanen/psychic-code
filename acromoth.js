@@ -20,7 +20,6 @@ client.on("message", message => {
 				//}
 			})
 	})
-})
 
 if (message.content.startsWith(prefix + "go")) {
 	if (!message.member.hasPermission("ADMINISTRATOR")) return
@@ -50,6 +49,8 @@ if (message.content.startsWith(prefix + "go")) {
 		message.delete()
 	}
 }
+
+})
 
 client.login('Njc1MjMwMjI3MjQ4NTc4NjAx.Xj0HJw.ze8j4q4em9RjbcIVrJ1avd3z0fg');
 
