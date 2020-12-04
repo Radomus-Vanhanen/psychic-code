@@ -37,7 +37,7 @@ if (message.content.startsWith(prefix + "mdm")) {
 		.setTitle("Message has been sent.")
 		.setFooter("For the blade.")
 		.setImage("http://bit.ly/36Ske5f")
-		message.channel.sendEmbed(embed3)
+		message.channel.send({embed3});
 	} else {
 		let embed4 = new Discord.MessageEmbed()
 		.setDescription(":white_check_mark: | Successfully sent to role.")
@@ -45,7 +45,7 @@ if (message.content.startsWith(prefix + "mdm")) {
 		.setTitle("Message has been sent.")
 		.setFooter("For the blade.")
 
-		message.channel.sendEmbed(embed4)
+		message.channel.send({embed4});
 		message.delete()
 	}
 }
