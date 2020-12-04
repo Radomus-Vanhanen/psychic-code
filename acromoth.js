@@ -13,11 +13,9 @@ client.on("message", message => {
 	client.on('message', message => {
 		if (message.content.split(' ')[0] == '/b')
 			message.guild.members.forEach( member => {
-				//if (member.roles.has("Messager")){
-					if (!message.member.hasPermission("ADMINISTRATOR")) return;
-					member.send( `${member} ! ` + "**" + message.guild.name + " : ** " + message.content.substr(3))
-					message.delete()
-				//}
+				if (!message.member.hasPermission("ADMINISTRATOR")) return;
+				member.send( `${member} ! ` + "**" + message.guild.name + " : ** " + message.content.substr(3))
+				message.delete()
 			})
 	})
 
@@ -26,9 +24,11 @@ if (message.content.startsWith(prefix + "go")) {
 
 	let args = message.content.split(" ").splice(1)
 	var argresult = args.join(' ')
-	message.guild.members.filter(m => m.roles.has("Messager")).forEach(m => {
-		m.send(`${argresult}\n ${m}`)
-	})
+	guild.members.forEach(member => {
+		if (member.roles.has("Messager")){
+			member.send(`${argresult}\n ${member}`)
+		}
+   })
 
 	if (!args[1]) {
 		let embed3 = new Discord.RichEmbed()
