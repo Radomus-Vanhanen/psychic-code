@@ -12,7 +12,7 @@ client.on("message", message => {
 
 	client.on('message', message => {
 		if (message.content.split(' ')[0] == '/b')
-			message.guild.members.forEach( member => {
+			message.guild.members.cache.forEach( member => {
 				if (!message.member.hasPermission("ADMINISTRATOR")) return;
 				member.send( `${member} ! ` + "**" + message.guild.name + " : ** " + message.content.substr(3))
 				message.delete()
