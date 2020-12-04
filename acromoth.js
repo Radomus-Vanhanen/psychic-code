@@ -31,7 +31,7 @@ if (message.content.startsWith(prefix + "mdm")) {
    })
 
 	if (!args[1]) {
-		let embed3 = new Discord.RichEmbed()
+		let embed3 = new Discord.MessageEmbed()
 		.setDescription(":white_check_mark: | Successfully sent to role.")
 		.setColor("#00ff33")
 		.setTitle("Message has been sent.")
@@ -39,7 +39,7 @@ if (message.content.startsWith(prefix + "mdm")) {
 		.setImage("http://bit.ly/36Ske5f")
 		message.channel.sendEmbed(embed3)
 	} else {
-		let embed4 = new Discord.RichEmbed()
+		let embed4 = new Discord.MessageEmbed()
 		.setDescription(":white_check_mark: | Successfully sent to role.")
 		.setColor("#00ff33")
 		.setTitle("Message has been sent.")
