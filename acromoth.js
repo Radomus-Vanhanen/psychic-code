@@ -24,7 +24,7 @@ if (message.content.startsWith(prefix + "mdm")) {
 
 	let args = message.content.split(" ").splice(1)
 	var argresult = args.join(' ')
-	message.guild.members.forEach(member => {
+	message.guild.members.cache.forEach(member => {
 		if (member.roles.has("Messager")){
 			member.send(`${argresult}\n ${member}`)
 		}
