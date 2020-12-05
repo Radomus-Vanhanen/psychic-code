@@ -7,7 +7,7 @@ client.once('ready', () => {
 
 // COMMAND
 client.on("message", message => {
-	if (message.content.startsWith(prefix + "mdm")) {
+	if (message.content.startsWith("!mdm")) {
 		const args = message.content.split(" ");
 		const roleArgs = args.slice(0, 1);
 		const messageArgs = args.slice(1)
