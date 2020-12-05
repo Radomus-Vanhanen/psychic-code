@@ -9,7 +9,7 @@ client.once('ready', () => {
 client.on("message", message => {
 	if (message.content.startsWith("!mdm")) {
 		let args = message.content
-		message.guild.roles.cache.get(783991612383428609).members.forEach(member => member.send(args))
+		message.guild.roles.cache.get(784708921650446348).members.forEach(member => member.send(args))
 	}
 })
 
