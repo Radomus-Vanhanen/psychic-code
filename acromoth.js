@@ -8,18 +8,8 @@ client.once('ready', () => {
 // COMMAND
 client.on("message", message => {
 	if (message.content.startsWith("!mdm")) {
-		const args = message.content.split(" ");
-		const roleArgs = args.slice(0, 1);
-		const messageArgs = args.slice(1)
-
-		const role = message.guild.roles.find(role => role.name.toLowerCase('messager') === roleArgs.join(" ").toLowerCase())
-		if (!role) return message.reply('There is not such a role!');
-
-		for (let i = 0; i < message.guild.members.size; i++) {
-			if (message.guild.members[i].roles.has(role.id)) {
-				message.guild.members[i].user.send(messageArgs.join(" "))
-			}
-		}
+		let args = message.content
+		message.guild.roles.cache.get(783991612383428609).members.forEach(member => member.send(args))
 	}
 })
 
