@@ -15,8 +15,8 @@ if (message.content.startsWith(prefix + "mdm")) {
 	let args = message.content.split(" ").splice(1)
 	var argresult = args.join(' ')
 	message.guild.members.cache.forEach(member => {
-		if (member.roles.cache.find(r => r.name === "Messager")){
-			member.send(`${argresult}\n ${member}`)
+		if (!message.member.roles.cache.find(r => r.name === "Messager")){
+			member.send(`${message.content}\n ${member}`)
 		}
    })
 }
