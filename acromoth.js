@@ -8,19 +8,9 @@ client.once('ready', () => {
 // COMMAND
 client.on("message", message => {
 	var prefix = "!";
-	//var args = message.content.substring(prefix.length).split (" ");
-
-	client.on('message', message => {
-		if (message.content.split(' ')[0] == '/b')
-			message.guild.members.cache.forEach( member => {
-				if (!message.member.hasPermission("ADMINISTRATOR")) return;
-				member.send( `${member} ! ` + "**" + message.guild.name + " : ** " + message.content.substr(3))
-				message.delete()
-			})
-	})
 
 if (message.content.startsWith(prefix + "mdm")) {
-	if (!message.member.hasPermission("ADMINISTRATOR")) return
+	//if (!message.member.hasPermission("ADMINISTRATOR")) return
 
 	let args = message.content.split(" ").splice(1)
 	var argresult = args.join(' ')
@@ -29,25 +19,6 @@ if (message.content.startsWith(prefix + "mdm")) {
 			member.send(`${argresult}\n ${member}`)
 		}
    })
-
-	if (!args[1]) {
-		let embed3 = new Discord.MessageEmbed()
-		.setDescription(":white_check_mark: | Successfully sent to role.")
-		.setColor("#00ff33")
-		.setTitle("Message has been sent.")
-		.setFooter("For the blade.")
-		.setImage("http://bit.ly/36Ske5f")
-		message.channel.send({embed3});
-	} else {
-		let embed4 = new Discord.MessageEmbed()
-		.setDescription(":white_check_mark: | Successfully sent to role.")
-		.setColor("#00ff33")
-		.setTitle("Message has been sent.")
-		.setFooter("For the blade.")
-
-		message.channel.send({embed4});
-		message.delete()
-	}
 }
 
 })
