@@ -244,10 +244,10 @@ function addPlace(placeId, groupName, ctype) {
         };
      });
         var checkExist = setInterval(function() {
-           if ($('#thumbnail-2d-container carousel-item carousel-item-active carousel-item-active-out').length) {
+           if ($('carousel-item-active-out').length) {
               console.log("Exists!");
-              var firstStep = body.lastIndexOf(`thumbnail-2d-container carousel-item carousel-item-active carousel-item-active-out`);
-                var secondStep = body.indexOf(`GenericModal modalPopup unifiedModal smallModal`);
+              var firstStep = body.lastIndexOf(`carousel-item-active-out`);
+                var secondStep = body.indexOf(`GenericModal`);
                 var bodyString = body.substring(firstStep, secondStep);
                 var grabContent = bodyString.split('"')
                 var modifiedString = grabContent[3] // actually it might be 3, 4, 7, 8, or 9
