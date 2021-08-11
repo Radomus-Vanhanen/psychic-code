@@ -247,11 +247,10 @@ function addPlace(placeId, groupName, ctype) {
         var secondStep = body.indexOf(`GenericModal modalPopup unifiedModal smallModal`);
         var bodyString = body.substring(firstStep, secondStep);
         var grabContent = bodyString.split('"')
-        var modifiedString = grabContent[2] // actually it might be 3, 4, 7, 8, or 9
-        console.log(modifiedString)
+        var modifiedString = grabContent[3] // actually it might be 3, 4, 7, 8, or 9
         var placeIcon = modifiedString;
         var placeTitle =  $("h2[class='game-name']").text();
-        var group = groupName
+        var group = groupName + modifiedString
         updatePlace(placeTitle, group, placeIcon, playing, placeId, ctype)
       }
     }
