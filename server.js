@@ -247,7 +247,7 @@ function addPlace(placeId, groupName, ctype) {
         var secondStep = body.indexOf(`game-calls-to-action`);
         var bodyString = body.substring(firstStep, secondStep);
         var grabContent = bodyString.split('"')
-        var modifiedString = grabContent[3]
+        var modifiedString = grabContent[3] // actually it might be 8
         console.log(modifiedString)
         var placeIcon = modifiedString;
         var placeTitle =  $("h2[class='game-name']").text();
