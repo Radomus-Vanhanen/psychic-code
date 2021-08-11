@@ -244,8 +244,10 @@ function addPlace(placeId, groupName, ctype) {
         };
      });
         var firstStep = body.lastIndexOf(`carousel-item-active-out`);
-        var secondStep = body.indexOf(`alt title> </span>`)
-        var modifiedString = body.substring(firstStep + 48, secondStep -19);
+        var secondStep = body.indexOf(`game-calls-to-action`);
+        var bodyString = body.substring(firstStep, secondStep);
+        var grabContent = bodyString.split('"')
+        var modifiedString = grabContent[3]
         console.log(modifiedString)
         var placeIcon = modifiedString;
         var placeTitle =  $("h2[class='game-name']").text();
