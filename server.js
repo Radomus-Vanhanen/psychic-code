@@ -243,21 +243,19 @@ function addPlace(placeId, groupName, ctype) {
             maxplayers = item;
         };
      });
-        var checkExist = setInterval(function() {
-           if ($('carousel-item-active-out').length) {
-              console.log("Exists!");
-              var firstStep = body.lastIndexOf(`carousel-item-active-out`);
-                var secondStep = body.indexOf(`GenericModal`);
-                var bodyString = body.substring(firstStep, secondStep);
-                var grabContent = bodyString.split('"')
-                var modifiedString = grabContent[3] // actually it might be 3, 4, 7, 8, or 9
-                var placeIcon = modifiedString;
-                var placeTitle =  $("h2[class='game-name']").text();
-                var group = groupName + modifiedString
-                updatePlace(placeTitle, group, placeIcon, playing, placeId, ctype)
-              clearInterval(checkExist);
-           }
-        }, 100); // check every 100ms
+       checkElement('carousel-item-active-out')
+       .then((element) => {
+           console.info(element);
+           var firstStep = body.lastIndexOf(`carousel-item-active-out`);
+           var secondStep = body.indexOf(`GenericModal`);
+           var bodyString = body.substring(firstStep, secondStep);
+           var grabContent = bodyString.split('"')
+           var modifiedString = grabContent[3] // actually it might be 3, 4, 7, 8, or 9
+           var placeIcon = modifiedString;
+           var placeTitle =  $("h2[class='game-name']").text();
+           var group = groupName + modifiedString
+           updatePlace(placeTitle, group, placeIcon, playing, placeId, ctype)
+        });     
       }
     }
   });
