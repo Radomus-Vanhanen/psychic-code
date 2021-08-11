@@ -243,9 +243,10 @@ function addPlace(placeId, groupName, ctype) {
             maxplayers = item;
         };
      });
-        var firstStep = body.lastIndexOf(`carousel-thumb`);
-        var secondStep = body.indexOf(`left carousel-control`)
-        var modifiedString = body.substring(firstStep + 19, secondStep -30);
+        var firstStep = body.lastIndexOf(`carousel-item-active-out`);
+        var secondStep = body.indexOf(`alt title> </span>`)
+        var modifiedString = body.substring(firstStep + 48, secondStep -19);
+        console.log(modifiedString)
         var placeIcon = modifiedString;
         var placeTitle =  $("h2[class='game-name']").text();
         var group = groupName
