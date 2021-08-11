@@ -263,7 +263,7 @@ function updatePlace(placeName, clanName, placeIcon, playing, placeid, category)
   console.log("Place: " + placeName)
   console.log("Playing: " + playing)
   MongoClient.connect(mongourl, {
-    autoReconnect: true, // Default
+    autoReconnect: false, // Default
     useNewUrlParser: true,
     useUnifiedTopology: true
     }, function(err, db) {
