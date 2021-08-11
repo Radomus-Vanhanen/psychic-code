@@ -243,11 +243,11 @@ function addPlace(placeId, groupName, ctype) {
             maxplayers = item;
         };
      });
-        var firstStep = body.lastIndexOf(`game-details-carousel-container`);
-        var secondStep = body.indexOf(`game-calls-to-action`);
+        var firstStep = body.lastIndexOf(`thumbnail-2d-container carousel-item carousel-item-active carousel-item-active-out`);
+        var secondStep = body.indexOf(`GenericModal modalPopup unifiedModal smallModal`);
         var bodyString = body.substring(firstStep, secondStep);
         var grabContent = bodyString.split('"')
-        var modifiedString = grabContent[8] // actually it might be 3, 4, 7, 8, or 9
+        var modifiedString = grabContent[2] // actually it might be 3, 4, 7, 8, or 9
         console.log(modifiedString)
         var placeIcon = modifiedString;
         var placeTitle =  $("h2[class='game-name']").text();
