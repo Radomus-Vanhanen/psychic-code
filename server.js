@@ -243,15 +243,21 @@ function addPlace(placeId, groupName, ctype) {
             maxplayers = item;
         };
      });
-        var firstStep = body.lastIndexOf(`thumbnail-2d-container carousel-item carousel-item-active carousel-item-active-out`);
-        var secondStep = body.indexOf(`GenericModal modalPopup unifiedModal smallModal`);
-        var bodyString = body.substring(firstStep, secondStep);
-        var grabContent = bodyString.split('"')
-        var modifiedString = grabContent[3] // actually it might be 3, 4, 7, 8, or 9
-        var placeIcon = modifiedString;
-        var placeTitle =  $("h2[class='game-name']").text();
-        var group = groupName + modifiedString
-        updatePlace(placeTitle, group, placeIcon, playing, placeId, ctype)
+        var checkExist = setInterval(function() {
+           if ($('#thumbnail-2d-container carousel-item carousel-item-active carousel-item-active-out').length) {
+              console.log("Exists!");
+              var firstStep = body.lastIndexOf(`thumbnail-2d-container carousel-item carousel-item-active carousel-item-active-out`);
+                var secondStep = body.indexOf(`GenericModal modalPopup unifiedModal smallModal`);
+                var bodyString = body.substring(firstStep, secondStep);
+                var grabContent = bodyString.split('"')
+                var modifiedString = grabContent[3] // actually it might be 3, 4, 7, 8, or 9
+                var placeIcon = modifiedString;
+                var placeTitle =  $("h2[class='game-name']").text();
+                var group = groupName + modifiedString
+                updatePlace(placeTitle, group, placeIcon, playing, placeId, ctype)
+              clearInterval(checkExist);
+           }
+        }, 100); // check every 100ms
       }
     }
   });
