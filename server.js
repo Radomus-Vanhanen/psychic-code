@@ -243,7 +243,7 @@ function addPlace(placeId, groupName, ctype) {
             maxplayers = item;
         };
      });
-        var firstStep = body.lastIndexOf(`carousel-item-active-out`);
+        var firstStep = body.lastIndexOf(`game-details-carousel-container`);
         var secondStep = body.indexOf(`game-calls-to-action`);
         var bodyString = body.substring(firstStep, secondStep);
         var grabContent = bodyString.split('"')
