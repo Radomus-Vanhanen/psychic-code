@@ -253,7 +253,7 @@ function addPlace(placeId, groupName, ctype) {
            var modifiedString = grabContent[3] // actually it might be 3, 4, 7, 8, or 9
            var placeIcon = modifiedString;
            var placeTitle =  $("h2[class='game-name']").text();
-           var group = groupName + modifiedString
+           var group = groupName
            updatePlace(placeTitle, group, placeIcon, playing, placeId, ctype)
         });     
       }
