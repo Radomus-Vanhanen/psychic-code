@@ -243,19 +243,10 @@ function addPlace(placeId, groupName, ctype) {
             maxplayers = item;
         };
      });
-       checkElement('carousel-item-active-out')
-       .then((element) => {
-           console.info(element);
-           var firstStep = body.lastIndexOf(`carousel-item-active-out`);
-           var secondStep = body.indexOf(`GenericModal`);
-           var bodyString = body.substring(firstStep, secondStep);
-           var grabContent = bodyString.split('"')
-           var modifiedString = grabContent[3] // actually it might be 3, 4, 7, 8, or 9
-           var placeIcon = modifiedString;
-           var placeTitle =  $("h2[class='game-name']").text();
-           var group = groupName
-           updatePlace(placeTitle, group, placeIcon, playing, placeId, ctype)
-        });     
+        var placeIcon = "https://www.roblox.com/asset-thumbnail/image?assetId=" + placeId + "&width=420&height=420&format=png"
+        var placeTitle =  $("h2[class='game-name']").text();
+        var group = groupName
+        updatePlace(placeTitle, group, placeIcon, playing, placeId, ctype)    
       }
     }
   });
