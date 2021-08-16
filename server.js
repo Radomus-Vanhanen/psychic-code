@@ -243,7 +243,7 @@ function addPlace(placeId, groupName, ctype) {
             maxplayers = item;
         };
      });
-        var placeIcon = "https://www.roblox.com/asset-thumbnail/image?assetId=" + placeId + "&width=420&height=236&format=png"
+        var placeIcon = "https://www.roblox.com/asset-thumbnail/image?assetId=" + placeId + "&width=420&height=420&format=png"
         var placeTitle =  $("h2[class='game-name']").text();
         var group = groupName
         updatePlace(placeTitle, group, placeIcon, playing, placeId, ctype)    
